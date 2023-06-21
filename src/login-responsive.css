@@ -1,0 +1,28 @@
+@media screen and (max-width: 1280px) {
+	#login {
+		display: flex;
+		width: 70vw;
+		height: 60vh;
+	}
+	
+	#login-header {
+		width: 35%;
+		height: 100%;
+	}
+	
+	#login-form {
+		width: 65%;
+		height: 100%;
+	}
+	
+	#login-username,
+	#login-password {
+		width: 85%;
+		height: 50%;
+	}
+	
+	#login-btn {
+		width: 85%;
+		height: 65%;
+	}
+}
