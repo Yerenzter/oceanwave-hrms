@@ -1,4 +1,33 @@
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 100px) {
+	#login {
+		display: grid;
+		width: 70vw;
+		height: 60vh;
+	}
+	
+	#login-header {
+		width: inherit;
+		height: 10vh;
+	}
+	
+	#login-form {
+		width: inherit;
+		height: 50vh;
+	}
+	
+	#login-username,
+	#login-password {
+		width: 50vw;
+		height: 5vh;
+	}
+	
+	#login-btn {
+		width: 50vw;
+		height: 65%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
 	#login {
 		display: flex;
 		width: 70vw;

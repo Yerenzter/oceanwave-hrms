@@ -32,6 +32,8 @@ footer {
     border: solid #aaaaaa48 1px;
     background-color: #ffffffaa;
     box-shadow: 0 0 24px #aaaaaa48;
+    border-radius: 48px;
+    overflow: hidden;
 }
 
 #login-header {
@@ -77,8 +79,8 @@ footer {
     border-bottom-color: #0155b8;
 }
 
-not #login-username:hover,
-not #login-password:hover {
+#login-username:not(#login-username:hover),
+#login-password:not(#login-password:hover) {
     border-block-color: #333;
 }
 
@@ -140,6 +142,7 @@ input[type="text"] {
     font-size: 20px;
     letter-spacing: 2px;
     color: #fff;
+    border-radius: 48px;
 }
 
 #login-btn:active,
