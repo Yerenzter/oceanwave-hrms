@@ -55,6 +55,83 @@
 	    </style>
     </head>
     <body onload="OnStart()" class="disable-selection">
+		<div id="modal-root">
+			<div class="modal" oninput="ValidateForm()">
+				<div class="modal-header">
+					<span class="modal-header-label">Add employee</span>
+				</div>
+				
+				<div class="modal-form">
+					<div id="m1" class="modal-input">
+						<div class="modal-label">
+							<span class="material-icons-outlined modal-icon">person</span>
+							<span class="modal-label-text">Name of employee</span>
+						</div>
+						
+						<div class="modal-input-field">
+							<div class="modal-input-box">
+								<input id="mi-lastname" class="modal-input-text" type="text" placeholder="Last name" oninput="ShowClear()">
+								<input class="material-icons-round modal-clear-btn" type="button" value="close">
+							</div>
+							<div class="modal-input-box">
+								<input id="mi-firstname" class="modal-input-text" type="text" placeholder="First name" oninput="ShowClear()">
+								<input class="material-icons-round modal-clear-btn" type="button" value="close">
+							</div>
+							<div class="modal-input-box">
+								<input id="mi-middlename" class="modal-input-text" type="text" placeholder="Middle name" oninput="ShowClear()">
+								<input class="material-icons-round modal-clear-btn" type="button" value="close">
+							</div>
+						</div>
+					</div>
+					
+					<div id="m2" class="modal-input">
+						<div class="modal-label">
+							<span class="material-icons-outlined modal-icon">email</span>
+							<span class="modal-label-text">Email of employee</span>
+						</div>
+						
+						<div class="modal-input-field">
+							<div class="modal-input-box">
+								<input id="mi-email" class="modal-input-text" type="text" placeholder="Email address" oninput="ShowClear()">
+								<input class="material-icons-outlined modal-clear-btn" type="button" value="close">
+							</div>
+						</div>
+					</div>
+					
+					<div id="m3" class="modal-input">
+						<div class="modal-label">
+							<span class="material-icons-outlined modal-icon">phone</span>
+							<span class="modal-label-text">Contact no. of employee</span>
+						</div>
+						
+						<div class="modal-input-field">
+							<div class="modal-input-box">
+								<input id="mi-phone-number" class="modal-input-text" type="text" placeholder="Contact number" oninput="ShowClear()">
+								<input class="material-icons-outlined modal-clear-btn" type="button" value="close">
+							</div>
+						</div>
+					</div>
+					
+					<div id="m4" class="modal-input">
+						<div class="modal-label">
+							<span id="mi-position" class="material-icons-outlined modal-icon">work</span>
+							<span class="modal-label-text">Assigned position of employee</span>
+						</div>
+						
+						<div class="modal-input-field">
+							<div class="modal-input-box">
+								<input class="modal-input-text" type="text" placeholder="Position" oninput="ShowClear()">
+								<input class="material-icons-outlined modal-clear-btn" type="button" value="close">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-action">
+					<input id="modal-action-cancel" class="modal-action-btn" type="button" value="Cancel" onclick="Cancel()">
+					<input id="modal-action-ok" class="modal-action-btn" type="button" value="Confirm">
+				</div>
+			</div>
+		</div>
 		<div id="root">
 			<div id="menu">
 				<div id="mb1" class="menu-btn" onclick="OnPage1()">
@@ -99,9 +176,51 @@
 			</div>
 			
 			<div id="container">
+				<section id="p1">
+					<div id="p1-header">
+						<div id="p1-header-btn" onclick="OnShowAddModal()">
+							<span id="p1-header-btn-icon" class="material-icons-outlined black">add</span>
+							<span id="p1-header-btn-label">Add new employee</span>
+						</div>
+					</div>
+					
+					<div id="p1-main">
+						<div id="table">
+							<div id="table-head">
+								<span id="th1" class="th-label">#</span>
+								<span id="th2" class="th-label">Employee name</span>
+								<span id="th3" class="th-label">Email</span>
+								<span id="th4" class="th-label">Status</span>
+								<span id="th5" class="th-label">Action</span>
+							</div>
+							
+							<div id="table-sheet">
+								<div class="table-data">
+									<span class="td">1</span>
+									<span class="td">Marc Joseff Flores Umiten</span>
+									<span class="td">yerenzter@yandex.com</span>
+									<span class="td">Working</span>
+									<span class="td">
+										<span class="material-icons-outlined">edit</span>
+										<span class="material-icons-outlined">delete</span>
+									</span>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section id="p2"><span>Two</span></section>
+				<section id="p3"><span>Three</span></section>
+				<section id="p4"><span>Four</span></section>
+				<section id="p5"><span>Five</span></section>
+				<section id="p6"><span>Six</span></section>
+				<section id="p7"><span>Seven</span></section>
+				<section id="p8"><span>Eight</span></section>
 			</div>
 		</div>
          
+        <script src="lib/sliderjs/slider.js" type="text/javascript"></script>
         <script src="src/dashboard.js" type="text/javascript"></script> 
         <script src="system/screen.js" type="text/javascript"></script>
         <script src="src/start.js" type="text/javascript"></script>
