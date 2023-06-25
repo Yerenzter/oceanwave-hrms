@@ -1,0 +1,19 @@
+/*
+    CONFIG.CSS
+    BY YERENZTER
+
+    – THIS CSS FILE CONTAINS THE CONFIGURATION
+    TO THE UI PROJECT WHICH IS ALREADY SET BY THE
+    DEFAULT.
+*/
+
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.disable-selection {
+    user-select: none;
+}
