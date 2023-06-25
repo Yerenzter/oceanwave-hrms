@@ -1,13 +1,13 @@
 {
   "name": "oceanwave",
   "version": "1.0.0",
-  "description": "",
+  "description": "Free and open-source human resource management system with interactive and minimalistic GUI.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["oceanwave", "yerenzter", "nodejs"],
+  "author": "Yereznter",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
