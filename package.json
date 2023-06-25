@@ -1,6 +1,6 @@
 {
-  "name": "oceanwave",
-  "version": "1.0.0",
+  "name": "OceanWave",
+  "version": "0.0.1",
   "description": "Free and open-source human resource management system with interactive and minimalistic GUI.",
   "main": "index.js",
   "scripts": {
