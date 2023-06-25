@@ -1,6 +1,0 @@
-.bottom {
-    position: absolute;
-    top: 1;
-    bottom: 0;
-    z-index: -1;
-}
