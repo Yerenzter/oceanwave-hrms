@@ -1,0 +1,9 @@
+{
+  "config": [
+    {
+      "id": 1,
+      "isAlreadyLoggedIn": false,
+      "isFirstTimeUser": true
+    }
+  ]
+}

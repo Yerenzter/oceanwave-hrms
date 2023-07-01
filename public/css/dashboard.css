@@ -18,10 +18,14 @@ body {
 	display: grid;
 	justify-content: center;
 	align-content: center;
+	margin-right: 100em;
+	margin-right: 100em;
 	padding: 1em;
 	width: 20vw;
 	height: 100%;
 	background-color: #0155b8;
+	position: relative;
+	overflow: hidden;
 }
 
 #container {
@@ -30,6 +34,8 @@ body {
 	align-content: center;
 	width: 80vw;
 	height: 100%;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .menu-btn {
@@ -40,6 +46,8 @@ body {
 	padding: 1em;
 	width: 100%;
 	height: 8vh;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .menu-icon {
@@ -159,7 +167,7 @@ body {
 
 #p1-header-btn:not(#p1-header-btn:hover)
 #p1-header-btn-label {
-	font-size: 0px;
+	font-size: 0;
 	transition: font-size 0.2s;
 }
 
@@ -170,7 +178,7 @@ body {
 #p1-header-btn-label {
 	margin-left: 0.5em;
 	font-family: Lexend Bold;
-	font-size: 0px;
+	font-size: 0;
 }
 
 #p1-main {
@@ -449,9 +457,19 @@ body {
 	color: #333;
 }
 
+#modal-action-cancel:active,
+#modal-action-cancel:hover {
+	color: #0155b8;
+}
+
 #modal-action-ok {
 	background-color: #33333348;
 	color: #fff;
+}
+
+#modal-action-ok:active,
+#modal-action-ok:hover {
+	background-color: #0155b8;
 }
 
 .edit-btn,

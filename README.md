@@ -1,7 +1,7 @@
 # OceanWave Theme HRMS
 Free and open-source human resource management system with interactive and minimalistic GUI.
 
-You can use this copy for:
+## You can use this copy for:
 - Personal
 - School
 - Commercial
@@ -10,6 +10,9 @@ You can use this copy for:
 
 ## Implementations
 - NodeJS
+- ExpressJS
+- JSON-Server
+- LowDB
 - SliderJS (*)
 - chartJS
 - AJAX
@@ -17,35 +20,37 @@ You can use this copy for:
 
 ## Usage
 
-### Linux
 ------
+
+## For Linux
 **Tools:** Any Linux terminal in to your desktop 
 
 **Commands**:
 
-**Install Git & NodeJS on Debian/Ubuntu and derivatives**
+**Update, Install NodeJS & Git package**
+
+**Debian/Ubuntu and derivatives**
 ```
 sudo apt install git nodejs
 ```
 
-**Install Git & NodeJS on Arch and derivatives**
+**Arch and derivatives**
 ```
 sudo pacman -S git nodejs
 ```
 
-**Install Git & NodeJS on Fedora and derivatives**
+**Fedora and derivatives**
 ```
 sudo dnf install git nodejs
 ```
 
-**Install Git & NodeJS on Alpine**
+**Alpine**
 ```
 sudo apk install git nodejs
 ```
-
-
-### Windows
 ------
+
+### For Windows
 **Tools:** Command Prompt or PowerShell
 
 **Commands**
@@ -53,8 +58,10 @@ sudo apk install git nodejs
 ```
 winget install Git.Git
 ```
-### Android
------- 
+
+------
+
+### For Android
 **Tools:** Termux
 
 **Commands**
@@ -64,6 +71,8 @@ pkg install git nodejs
 ```
 
 ------
+
+**After you install all the packages clone OceanWave repository from GitHub**
 **Clone the repository**
 ``` 
 sudo git clone https://github.com/Yerenzter/oceanwave-hrms
@@ -72,9 +81,9 @@ sudo git clone https://github.com/Yerenzter/oceanwave-hrms
 ```
 cd oceanwave-hrms
 ```
-**Initialize NodeJS project & install ExpressJS**
+**Initialize NodeJS project & install ExpressJS, JSON-Server & LowDB**
 ```
-npm init -y && npm install express
+npm init -y && npm install -g express json-server lowdb
 ```
 
 **Run server.js file using this command**

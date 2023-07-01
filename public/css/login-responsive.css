@@ -1,57 +1,74 @@
 @media screen and (min-width: 100px) {
-	#login {
-		display: grid;
-		width: 70vw;
-		height: 60vh;
-	}
-	
-	#login-header {
-		width: inherit;
-		height: 10vh;
-	}
-	
-	#login-form {
-		width: inherit;
-		height: 50vh;
-	}
-	
-	#login-username,
-	#login-password {
-		width: 50vw;
-		height: 5vh;
-	}
-	
-	#login-btn {
-		width: 50vw;
-		height: 65%;
-	}
+    header > h1 {
+        font-size: 30px;
+    }
+    
+    #login {
+        display: grid;
+        width: 80vw;
+        height: 60vh;
+        border-radius: 24px;
+    }
+
+    #login-header {
+        width: inherit;
+        height: 10vh;
+    }
+
+    #login-form {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    #login-username,
+    #login-password {
+        width: 60vw;
+        height: 2vh;
+    }
+    
+    #username,
+    #password {
+        font-size: 16px;
+    }
+
+    #login-btn {
+        width: 60vw;
+        height: 65%;
+    }
+
+    #login-validator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-	#login {
-		display: flex;
-		width: 70vw;
-		height: 60vh;
-	}
-	
-	#login-header {
-		width: 35%;
-		height: 100%;
-	}
-	
-	#login-form {
-		width: 65%;
-		height: 100%;
-	}
-	
-	#login-username,
-	#login-password {
-		width: 85%;
-		height: 50%;
-	}
-	
-	#login-btn {
-		width: 85%;
-		height: 65%;
-	}
+    #login {
+        display: flex;
+        width: 70vw;
+        height: 60vh;
+    }
+
+    #login-header {
+        width: 35%;
+        height: 100%;
+    }
+
+    #login-form {
+        width: 65%;
+        height: 100%;
+    }
+
+    #login-username,
+    #login-password {
+        width: 85%;
+        height: 50%;
+    }
+
+    #login-btn {
+        width: 85%;
+        height: 65%;
+    }
 }

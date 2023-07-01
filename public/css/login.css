@@ -33,14 +33,22 @@ footer {
     background-color: #ffffffaa;
     box-shadow: 0 0 24px #aaaaaa48;
     border-radius: 48px;
+    position: relative;
     overflow: hidden;
+    opacity: 0;
 }
 
 #login-header {
     display: grid;
     justify-content: center;
     align-items: center;
+    margin-right: 100em;
     background-color: #0155b8;
+    position: relative;
+}
+
+#login-header-label {
+	opacity: 0;
 }
 
 #login-form {
