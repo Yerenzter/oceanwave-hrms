@@ -93,5 +93,5 @@ node server.js
 
 **Go to browser and type this address in URL bar**
 ```
-https://127.0.0.1:1024
+https://localhost:1024
 ```

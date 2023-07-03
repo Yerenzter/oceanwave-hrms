@@ -7,7 +7,7 @@ function IsAlreadyLoggedIn() {
     let json = {
         isAlreadyLoggedIn: true,
     };
-    fetch("config/1", {
+    fetch("http://localhost:10/config/1", {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json",

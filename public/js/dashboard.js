@@ -40,6 +40,7 @@ let p7 = document.querySelector("#p7");
 let p8 = document.querySelector("#p8");
 
 let modal = document.querySelector("#modal-root");
+let modalHeaderLabel = document.querySelector("#modal-header-label");
 let modalActionOk = document.querySelector("#modal-action-ok");
 let modalDlg = document.querySelector(".modal");
 let modalClrBtn = document.querySelectorAll(".modal-clear-btn");
@@ -254,11 +255,26 @@ function OnShowAddModal() {
     modalDlg.style.transition = "opacity 0.3s";
 
     ClearAddEmployeeForms();
+    ResetAddEmployeeLabels("all");
+    DisableConfirmButton();
+}
+
+function OnHideAddModal() {
+	modalDlg.style.opacity = 0;
+    modalDlg.style.transition = "opacity 0.2s";
+    
+    setTimeout(() => {
+        modal.style.visibility = "hidden";
+    }, 200);
+	
+	HideClearButton();		
 }
 
 function Cancel() {
     modalDlg.style.opacity = 0;
     modalDlg.style.transition = "opacity 0.2s";
+    
+    modalHeaderLabel.textContent = "Add employee"
 
     ClearAddEmployeeForms();
     ResetAddEmployeeLabels();
@@ -271,40 +287,38 @@ function Cancel() {
 }
 
 function Confirm() {
-    modalDlg.style.opacity = 0;
-    modalDlg.style.transition = "opacity 0.2s";
-
-    ResetAddEmployeeLabels("all");
-    DisableConfirmButton();
-    HideClearButton();
-
+    OnHideAddModal();
     AddEmployee();
-
+    
+    ClearAllTableData();
+    
     setTimeout(() => {
+		GetEmployeeList();
         modal.style.visibility = "hidden";
     }, 200);
 }
 
 function AddEmployee() {
-	let idCount;
-    let employeeName = `${firstName.value} ${lastName.value}`;
+	let tableData = document.querySelectorAll(".table-data");
+	let idCount = tableData.length;
+    let employeeLastName = lastName.value;
+    let employeeFirstName= firstName.value;
+    let employeeMiddleName = middleName.value;
     let employeeEmail = email.value;
 
-    for (r = 0; r < tableData.length; r++) {
-        idCount = r;
-    }
-
-    CreateEmployeeList(idCount+1, employeeName, employeeEmail);
+    CreateEmployeeList(idCount+1, employeeLastName, employeeFirstName, employeeMiddleName, employeeEmail);
 
     let employee = {
         id: idCount + 1,
-        name: `${firstName.value} ${middleName.value} ${lastName.value}`,
+        lastname: employeeLastName,
+        firstname: employeeFirstName,
+        middlename: employeeMiddleName,
         email: email.value,
         number: phoneNumber.value,
         occupation: assignedPosition.value,
     };
 
-    fetch("employee", {
+    fetch("http://localhost:24/employee", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -319,6 +333,52 @@ function AddEmployee() {
         .catch((error) => {
             console.log(error);
         });
+}
+
+function OnAddEmployee() {
+	OnShowAddModal();
+	modalDlg.oninput = () => ValidateForm("add");
+}
+
+function UpdateEmployee(id) {
+	let employee = {
+		id: id,
+		lastname: lastName.value,
+		firstname: firstName.value,
+		middlename: middleName.value,
+		email: email.value,
+		number: phoneNumber.value,
+		occupation: assignedPosition.value
+	}
+	
+	ClearAllTableData();
+	
+	setTimeout(() => {
+		GetEmployeeList();	
+	}, 500);
+	
+	fetch(`http://localhost:24/employee/${id}`, {
+		method: "PATCH",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(employee)
+	})
+	.then((error) => {
+		console.log(error ? "STATUS_CODE::403" : "JSON is patched successfully.");	
+	})
+	.catch((error) => {
+		console.log(error);	
+	});
+}
+
+function ClearAllTableData() {
+	let tableSheet =  document.querySelector("#table-sheet");
+	let tableData = document.querySelectorAll(".table-data");
+	
+	for(let r=0; r < tableData.length; r++) {
+		tableSheet.removeChild(tableData[r]);	
+	}	
 }
 
 function RemoveEmployee() {
@@ -346,7 +406,7 @@ function RemoveEmployee() {
                     return response.json();
                 })
                 .then((data) => {
-                    fetch(`employee/${data.employee[r].id}`, {
+                    fetch(`http://localhost:24/employee/${data.employee[r].id}`, {
                         method: "DELETE",
                     })
                         .then((error) => {
@@ -365,15 +425,45 @@ function RemoveEmployee() {
 }
 
 function EditEmployee() {
-    let tableSheet = document.querySelector("#table-sheet");
-    let tableData = document.querySelectorAll(".table-data");
-    let editBtn = document.querySelectorAll(".edit-btn");
-
-    for (let r = 0; r < editBtn.length; r++) {
-        editBtn[r].onclick = () => {
-            OnShowAddModal();
-        };
-    }
+	fetch("data/employee/employee.json", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json"	
+		},
+		mode: "cors",
+		cache: "default"
+	})
+	.then((response) => {
+		return response.json();	
+	})
+	.then((data) => {
+		let tableSheet = document.querySelector("#table-sheet");
+		let tableData = document.querySelectorAll(".table-data");
+		let editBtn = document.querySelectorAll(".edit-btn");
+		
+		editBtn.className = round;
+    
+		for(let r=0; editBtn.length; r++) {
+			editBtn[r].onclick = () => {
+				OnShowAddModal();
+				
+				modalHeaderLabel.textContent = "Edit employee";
+				lastName.value = data.employee[r].lastname;
+				firstName.value = data.employee[r].firstname;
+				middleName.value = data.employee[r].middlename;
+				email.value = data.employee[r].email;
+				phoneNumber.value = data.employee[r].number;
+				assignedPosition.value = data.employee[r].occupation;
+				
+				ShowClear();
+				ValidateForm();			
+				modalDlg.oninput = () => ValidateForm("update", data.employee[r].id);
+			};
+		}
+	})
+	.catch((error) => {
+		console.log(error);	
+	});
 }
 
 function GetEmployeeList() {
@@ -392,7 +482,9 @@ function GetEmployeeList() {
             for (let r = 0; r < data.employee.length; r++) {
                 CreateEmployeeList(
                     data.employee[r].id,
-                    data.employee[r].name,
+                    data.employee[r].lastname,
+                    data.employee[r].firstname,
+                    data.employee[r].middlename,
                     data.employee[r].email
                 );
             }
@@ -402,7 +494,7 @@ function GetEmployeeList() {
         });
 }
 
-function CreateEmployeeList(employee_id, employee_name, employee_email) {
+function CreateEmployeeList(employee_id, employee_lastname, employee_firstname, employee_middlename, employee_email) {
     let tableSheet = document.querySelector("#table-sheet");
     let tableData = document.createElement("div");
     let td1 = document.createElement("span");
@@ -429,7 +521,7 @@ function CreateEmployeeList(employee_id, employee_name, employee_email) {
     remove.onclick = RemoveEmployee;
 
     td1.textContent = employee_id;
-    td2.textContent = employee_name;
+    td2.textContent = `${employee_lastname} ${employee_firstname} ${employee_middlename}`;
     td3.textContent = employee_email;
     td4.textContent = "New";
     edit.textContent = "edit";
@@ -489,9 +581,9 @@ function ResetAddEmployeeLabels(args) {
 	}
 }
 
-function EnableConfirmButton() {
+function EnableConfirmButton(mode, id) {
     modalActionOk.style.backgroundColor = blue;
-    modalActionOk.onclick = Confirm;
+    modalActionOk.onclick = mode == "update" ? () => (UpdateEmployee(id), OnHideAddModal()) : mode == "add" ? Confirm : false;
 }
 
 function DisableConfirmButton() {
@@ -505,7 +597,7 @@ function HideClearButton() {
     }
 }
 
-function ValidateForm() {
+function ValidateForm(mode, id) {
     if (0 < modalInputText[0].value.length)
         if (0 < modalInputText[1].value.length)
             if (0 < modalInputText[2].value.length) {
@@ -554,7 +646,7 @@ function ValidateForm() {
                 if (0 < modalInputText[3].value.length)
                     if (0 < modalInputText[4].value.length)
                         if (0 < modalInputText[5].value.length) {
-                            EnableConfirmButton();
+                            EnableConfirmButton(mode, id);
                         } else {
                             DisableConfirmButton();
                         }
