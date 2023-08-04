@@ -1,0 +1,33 @@
+#ow-dashboard {
+    transition-duration: 200ms;
+}
+
+#ow-menu-icon:active,
+#ow-account-icon:active {
+    background-color: #ffffffaa;
+    transition: background-color 0.3s;
+}
+
+.ow-account-option-btn:hover {
+    background-color: #33333324;
+    border-bottom: solid #00000000 1.5px;
+    border-radius: 12px;
+}
+
+#ow-account-settings-back:hover {
+    background-color: #33333324;
+}
+
+#ow-account-settings-content-action-btn:hover {
+    background-color: #0155b8;
+}
+
+#ow-account-settings-content-action-btn:hover
+#ow-account-settings-content-action-icon {
+    color: #fff;
+}
+
+#ow-account-settings-content-action-btn:hover
+#ow-account-settings-content-action-label {
+    color: #fff;
+}

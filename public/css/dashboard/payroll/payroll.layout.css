@@ -1,0 +1,137 @@
+#ow-payroll-tab {
+	box-sizing: content-box;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: space-around;
+	align-content: center;
+	width: inherit;
+	height: 10vh;
+	position: relative;
+	overflow: hidden;
+ }
+ 
+.ow-payroll-tab-btn {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 0.1fr 1.9fr;
+	justify-content: center;
+	align-content: center;
+	width: auto;
+	padding: 1rem;
+	height: auto;
+	border: solid #0155b8 3px;
+	border-radius: 48px;
+ }
+ 
+.ow-payroll-tab-icon,
+.ow-payroll-tab-label {
+	font-family: Lexend Bold;
+}
+ 
+#ow-ptb1 {
+	background-color: #0155b8;
+}
+ 
+#ow-ptb2 {
+	background-color: #00000000;
+}
+ 
+#ow-pti1,
+#ow-ptl1 {
+	color: #fff;
+} 
+
+#ow-pti2,
+#ow-ptl2 {
+	color: #0155b8;
+}
+ 
+#ow-payroll-content {
+	box-sizing: content-box;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	width: inherit;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+ 
+#ow-payroll-content::-webkit-scrollbar {
+	border-radius: 48px;
+	width: 1vh;
+	background-color: #00000000;
+}
+
+#ow-payroll-content::-webkit-scrollbar-thumb {
+	border-radius: 48px;
+	width: 1vh;
+	background-color: #0155b8;
+}
+
+.ow-payroll-page {
+	box-sizing: content-box;
+	display: grid;
+	justify-content: center;
+	align-content: flex-start;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	background-color: #fff;
+}
+
+#ow-pp1 {
+	z-index: 1;
+}
+
+#ow-pp2 {
+	z-index: 0;
+}
+
+#ow-payroll-page-section {
+	box-sizing: content-box;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-content: center;
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+
+.ow-payroll-page-section {
+	box-sizing: content-box;
+	display: grid;
+	justify-content: center;
+	align-content: flex-start;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+}
+
+.ow-payroll-input {
+	padding: 1rem;
+	border: 0;
+	border-bottom: solid #0155b8 3px;
+	font-family: Lexend Regular;
+	font-size: 24px;
+	color: #333;
+}
+
+#ow-payroll-action-btn {
+	border: 0;
+	border-radius: 12px;
+	margin: 1rem 0 1rem 0;
+	padding: 1rem;
+	font-family: Lexend Bold;
+	font-size: 24px;
+	background-color: #0155b8;
+	color: #fff;
+}
+
+.ow-payroll-label {
+	font-family: Lexend Bold;
+	font-size: 24px;
+	color: #333;
+	margin-top: 1rem;
+}

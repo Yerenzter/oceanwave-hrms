@@ -1,0 +1,307 @@
+@media screen and (min-width: 99px) {
+    #ow-login-username,
+    #ow-login-password {
+        width: auto;
+        border-bottom-width: 1px;
+    }
+
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 35vw;
+        font-size: 8px;
+    }
+
+    #ow-login-btn,
+    #ow-signup-btn {
+        margin: 0 0.1rem 0 0.1rem;
+        font-size: 4px;
+    }
+
+    #ow-logo-content {
+        font-size: 12px;
+    }
+
+    #ow-login-box {
+        width: inherit;
+    }
+
+    #ow-login-header {
+        background-color: #fff;
+    }
+
+    #ow-login-form {
+        width: inherit;
+    }
+
+    #ow-login-header-label {
+        font-size: 8px;
+        color: #333;
+    }
+
+    #ow-message {
+    }
+
+    #ow-login-message-label {
+        font-size: 2px;
+    }
+
+    #ow-login-action {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #ow-signup-btn {
+        border-width: 1px;
+    }
+
+    #ow-copyright {
+    }
+
+    #ow-copyright-label {
+        font-size: 2px;
+    }
+
+    .ow-icon {
+        width: auto;
+        height: auto;
+        transform: scale(0.3);
+    }
+}
+
+@media screen and (min-width: 119px) {
+}
+@media screen and (min-width: 319px) {
+    #ow-login-username,
+    #ow-login-password {
+        padding: 1.5rem;
+        width: 80vw;
+        border-bottom-width: 2px;
+    }
+
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 75vw;
+        font-size: 24px;
+    }
+
+    #ow-login-btn,
+    #ow-signup-btn {
+        margin: 0.5rem 0 0.5rem 0;
+        padding: 1rem;
+        font-size: 24px;
+    }
+
+    #ow-logo {
+        height: 10vh;
+    }
+
+    #ow-logo-content {
+        font-size: 24px;
+    }
+
+    #ow-login {
+        height: 85vh;
+    }
+
+    #ow-login-header {
+        height: 15vh;
+    }
+
+    #ow-login-header-label {
+        font-size: 36px;
+    }
+
+    #ow-login-form {
+        height: 70vh;
+    }
+
+    #ow-login-message {
+        width: 80vw;
+    }
+
+    #ow-login-message-label {
+        width: inherit;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #ow-login-action {
+        margin-top: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #ow-signup-btn {
+        border-width: 2px;
+    }
+
+    #ow-copyright {
+        height: 5vh;
+    }
+
+    #ow-copyright-label {
+        font-size: 14px;
+    }
+
+    .ow-icon {
+        width: 6.5vw;
+        height: inherit;
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 374px) {
+    #ow-login-header-label {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 434px) {
+    #ow-login-username,
+    #ow-login-password {
+        padding: 1rem;
+    }
+
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 70vw;
+    }
+
+    #ow-login-header-label {
+    }
+
+    #ow-login-btn,
+    #ow-signup-btn {
+    }
+
+    #ow-login-action {
+        margin-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #ow-login-username,
+    #ow-login-password {
+        margin: 1rem 0 0 0;
+        padding: 1rem 0 1rem 0;
+        width: 30vw;
+        overflow: hidden;
+    }
+
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 25vw;
+        height: auto;
+    }
+
+    #ow-login-btn,
+    #ow-signup-btn {
+        margin: 0.2rem 0 0.2rem 0;
+        padding: 0.8rem;
+    }
+
+    #ow-login-box {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
+        height: 60vh;
+        border-radius: 24px;
+        box-shadow: 0 0 24px #33333324;
+    }
+
+    #ow-login-header {
+        width: 25vw;
+        height: inherit;
+        background-color: #0155b8;
+    }
+
+    #ow-login-header-label {
+        font-size: 48px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    #ow-login-header-advice {
+        justify-self: center;
+        width: 20vw;
+        font-size: 14px;
+        font-kerning: normal;
+    }
+
+    #ow-login-form {
+        padding: 0;
+        width: 45vw;
+        height: inherit;
+    }
+
+    #ow-login-message {
+        padding: 0;
+        width: 30vw;
+    }
+
+    #ow-login-action {
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+        width: 30vw;
+    }
+
+    #ow-copyright-label {
+        font-size: 18px;
+    }
+
+    .ow-icon {
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    #ow-login-header-label {
+        letter-spacing: 12px;
+    }
+}
+
+@media screen and (min-width: 2559px) {
+    #ow-login-username,
+    #ow-login-password,
+    #ow-login-message,
+    #ow-login-action {
+        width: 15vw;
+    }
+
+    #ow-login-username-input,
+    #ow-login-password-input {
+        width: 13vw;
+    }
+
+    #ow-login-box {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    #ow-login-header {
+        width: 15vw;
+    }
+
+    #ow-login-header-label {
+        font-size: 56px;
+        letter-spacing: 5px;
+    }
+
+    #ow-login-header-advice {
+        justify-self: center;
+        width: 10vw;
+        font-size: 18px;
+        font-kerning: normal;
+    }
+
+    #ow-login-form {
+        width: 25vw;
+    }
+}

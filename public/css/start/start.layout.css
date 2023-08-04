@@ -1,0 +1,74 @@
+#ow-banner,
+#ow-loading,
+#ow-greet,
+#ow-start {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#ow-greet,
+#ow-start,
+#ow-loading-label {
+    width: inherit;
+}
+
+#ow-banner,
+#ow-loading {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-greet-label,
+#ow-start-btn {
+    font-family: Lexend ExtraBold;
+    text-align: center;
+}
+
+#ow-banner {
+    height: 90vh;
+}
+
+#ow-start-btn {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    background-color: #0155b8;
+    color: #fff;
+    width: 0;
+    height: auto;
+    opacity: 0;
+}
+
+#ow-loading {
+    height: 10vh;
+}
+
+#ow-loading-label {
+    font-family: Lexend Light;
+    text-align: center;
+}
+
+
+.ow-divider {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    height: 0.5vh;
+    width: 0;
+    background-color: #0155b8;
+}
+
+#ow-greet {
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-greet-label {
+    position: static;
+    opacity: 0;
+}

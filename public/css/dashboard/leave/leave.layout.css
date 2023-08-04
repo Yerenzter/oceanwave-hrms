@@ -1,0 +1,161 @@
+#ow-leave-tab {
+    box-sizing: content-box;
+    grid-template-columns: repeat(4,auto);
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    width: inherit;
+    height: 10vh;
+    position: relative;
+}
+
+#ow-leave-content {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: 80vh;
+    position: relative;
+}
+
+.ow-leave-tab-btn {
+    box-sizing: content-box;
+    grid-template-columns: 0.2fr 1.8fr;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 1rem;
+    position: relative;
+    border: solid #0155b8 3px;
+    border-radius: 48px;
+}
+
+.ow-leave-tab-icon,
+.ow-leave-tab-label {
+    font-family: Lexend Bold;
+}
+
+#ow-lb1 {
+    background-color: #0155b8;
+}
+
+#ow-li1,
+#ow-ll1 {
+    color: #fff;
+}
+
+#ow-li2,
+#ow-li3,
+#ow-li4,
+#ow-ll2,
+#ow-ll3,
+#ow-ll4 {
+    color: #0155b8;
+}
+
+.ow-leave-page {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: #fff;
+}
+
+#ow-lp1 {
+    z-index: 1;
+}
+
+#ow-lp2,
+#ow-lp3 {
+    z-index: 0;
+}
+
+.ow-lp-tab {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: 10vh;
+    position: relative;
+}
+
+.ow-lp-add-form {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1.8fr 0.2fr;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 48px;
+    background-color: #33333324;
+}
+
+.ow-add-text,
+.ow-add-leave-btn {
+    border: 0;
+    padding: 1rem;
+    font-family: Lexend Light;
+}
+
+.ow-add-text {
+    background-color: #00000000;
+    color: #333;
+}
+
+.ow-add-leave-btn {
+    border-radius: 48px;
+    background-color: #0155b8;
+    color: #fff;
+}
+
+.ow-leave-content {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    width: inherit;
+    height: 70vh;
+    position: relative;
+}
+
+.ow-leave-data {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1.9fr 0.1fr;
+    justify-content: center;
+    align-content: center;
+    border-radius: 12px;
+    margin: 1rem 0 1rem 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 4px #33333324;
+    overflow: hidden;
+}
+
+.ow-leave-label {
+    width: 50vw;
+    padding: 1rem;
+    height: inherit;
+    font-size: 24px;
+    font-family: Lexend Light;
+    color: #333;
+}
+
+.ow-leave-option-btn {
+    border: 0;
+    border-radius: 48px;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+    color: #333;
+    font-size: 12px;
+}

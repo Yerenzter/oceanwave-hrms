@@ -1,0 +1,198 @@
+#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-box,
+#ow-signup-header,
+#ow-signup-form,
+#ow-username-box,
+#ow-password-box,
+#ow-role-spinner,
+#ow-signup-action,
+#ow-spinner-btn,
+#ow-spinner-item {
+    box-sizing: content-box;
+}
+
+#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-box,
+#ow-signup-header,
+#ow-signup-form,
+#ow-username-box,
+#ow-password-box,
+#ow-role-spinner,
+#ow-signup-action,
+#ow-spinner-btn,
+#ow-spinner-item {
+    display: grid;
+}
+
+#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-box,
+#ow-signup-header,
+#ow-signup-form,
+#ow-username-box,
+#ow-password-box,
+#ow-role-spinner,
+#ow-signup-action,
+#ow-spinner-btn,
+#ow-spinner-item {
+    justify-content: center;
+}
+
+#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-header,
+#ow-signup-form,
+#ow-username-box,
+#ow-password-box,
+#ow-role-spinner,
+#ow-signup-action,
+#ow-spinner-btn,
+#ow-spinner-item {
+    align-content: center;
+}
+
+#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-box,
+#ow-signup-header,
+#ow-signup-form,
+#ow-username-box,
+#ow-password-box,
+#ow-role-spinner,
+#ow-signup-action,
+#ow-spinner-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-header,
+#ow-signup,#ow-header,
+#ow-signup,
+#ow-copyright,
+#ow-signup-box,
+#ow-signup-header,
+#ow-signup-form,
+#ow-copyrght {
+    width: 100vw;
+}
+
+#ow-header {
+    height: 10vh;
+}
+
+#ow-username-box,
+#ow-password-box {
+    border-bottom: solid #0155b8 2px;
+    padding: 1rem 0 1rem 0;
+    height: auto;
+}
+
+#ow-username,
+#ow-password,
+.ow-clear-btn,
+.ow-signup-icon {
+    border: 0;
+    background-color: #00000000;
+    font-family: Lexend Light;
+    color: #333;
+}
+
+#ow-role-spinner-label,
+#ow-spinner-btn {
+    font-family: Lexend Bold;
+    color: #0155b8;
+}
+
+#ow-signup-btn {
+    padding: 1rem 0 1rem 0;
+    border: 0;
+    border-radius: 48px;
+    background-color: #0155b8;
+    font-family: Lexend Bold;
+    color: #fff;
+}
+
+#ow-header {
+    background-color: #0155b8; 
+}
+
+#ow-signup {
+    height: 85vh;
+}
+
+#ow-signup-box {
+}
+
+#ow-copyright {
+    height: 5vh;
+}
+
+#ow-copyright-label{
+    font-family: Lexend Regular;
+}
+
+#ow-signup-header {
+    background-color: #0155b8;
+}
+
+#ow-header-label,
+#ow-signup-header-label {
+    font-family: Lexend Bold;
+    color: #fff;
+}
+
+#ow-signup-form {
+}
+
+.ow-signup-icon {
+    padding: 0.3rem;
+    height: auto;
+}
+
+#ow-spinner-btn {
+    width: inherit;
+    height: auto;
+    border: solid #0155b8 3px;
+    border-radius: 48px;
+}
+
+#ow-role-spinner-label {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+#ow-role-spinner-btn {
+    font-size: 30px;
+}
+
+#ow-spinner-item {
+    justify-self: center;
+    width: auto;
+    height: 0;
+    padding: 0 1rem 0 1rem;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0 24px #3333;
+    overflow: hidden;
+}
+
+.ow-spinner-btn {
+    width: 300px;
+    font-family: Lexend Regular;
+    position: relative;
+    border-radius: 12px;
+}
+
+.ow-clear-btn {
+    visibility: hidden;
+}

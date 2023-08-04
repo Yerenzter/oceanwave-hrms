@@ -1,0 +1,234 @@
+@media screen and (min-width: 99px) {
+    #ow-icon-1,
+    #ow-icon-2,
+    #ow-menu-bar-logo {
+        font-family: Lexend Bold;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    #ow-username,
+    #ow-role {
+        text-align: center;
+    }
+
+    #ow-icon-1,
+    #ow-icon-2 {
+        width: 10vw;
+    }
+    
+    #ow-menu-icon,
+    #ow-account-icon {
+        font-size: 36px;
+    }
+
+    #ow-menu-backdrop {
+        grid-template-columns: repeat(2, auto);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 99;
+        visibility: hidden;
+    }
+
+    #ow-menu {
+        width: 65vw;
+        height: inherit;
+    }
+
+    #ow-profile {
+        width: inherit;
+        height: 20vh;
+    }
+
+    #ow-avatar-box {
+        width: inherit;
+        height: 12vh;
+    }
+
+    #ow-user-id {
+        width: inherit;
+        height: 8vh;
+    }
+
+    #ow-avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    #ow-menu-item {
+        width: auto;
+        height: 65vh;
+        padding: 1rem;
+        overflow: hidden;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #ow-menu-action {
+        width: inherit;
+        height: 10vh;
+    }
+
+    .ow-menu-action-btn {
+        width: inherit;
+        height: 5vh;
+    }
+
+    .ow-menu-action-label {
+        grid-template-columns: 0.2fr 1.8fr;
+        width: initial;
+        height: inherit;
+    }
+
+    #ow-version {
+        width: inherit;
+        height: 5vh;
+    }
+
+    #ow-menu-modular {
+        width: 36vw;
+        height: inherit;
+    }
+
+    #ow-sandbox {
+        width: 100vw;
+    }
+
+    #ow-menu-bar {
+        grid-template-columns: repeat(3, auto);
+        width: inherit;
+        height: 10vh;
+        background-color: #0155b8;
+    }
+
+    #ow-menu-bar-logo {
+        width: 80vw;
+        height: inherit;
+    }
+    
+    #ow-menu {
+        width: 0;
+    }
+    
+    #ow-menu-modular {
+        width: inherit;
+    }
+
+    #ow-page-box {
+        width: inherit;
+        height: 90vh;
+    }
+
+    .ow-menu-btn {
+        padding: 1rem;
+    }
+
+    .ow-menu-label {
+        width: inherit;
+        height: inherit;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .ow-menu-btn-value {
+        height: inherit;
+    }
+
+    .ow-accordion {
+        margin-left: 1.6rem;
+        width: 12vw;
+    }
+
+    .ow-accordion-btn {
+        grid-template-columns: 0.2fr 1.8fr;
+        width: inherit;
+        height: inherit;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 434px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+    #ow-icon-1,
+    #ow-icon-2 {
+        width: 10vw;
+        height: inherit;
+    }
+
+    #ow-dashboard {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #ow-menu-backdrop {
+        width: 20vw;
+        height: inherit;
+        position: relative;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    #ow-menu {
+        width: inherit;
+        height: inherit;
+    }
+
+    .ow-menu-btn-value {
+        font-size: 18px;
+    }
+
+    #ow-menu-modular {
+        display: none;
+    }
+
+    #ow-sandbox {
+        width: 80vw;
+        height: inherit;
+    }
+
+    #ow-menu-bar {
+        width: inherit;
+        background-color: #00000001;
+    }
+
+    #ow-menu-icon {
+        visibility: hidden;
+    }
+
+    #ow-account-icon {
+        font-size: 49px;
+        color: #333;
+    }
+
+    #ow-menu-bar-logo {
+        visibility: hidden;
+        width: 60vw;
+    }
+
+    .ow-accordion-icon {
+        font-size: 24px;
+    }
+
+    .ow-accordion-btn-value {
+        font-size: 18px;
+    }
+    
+    #ow-account-settings-content {
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .ow-account-settings-profile-data-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

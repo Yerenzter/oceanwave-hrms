@@ -1,0 +1,143 @@
+#ow-attendance-tab {
+    box-sizing: content-box;
+    grid-template-columns: repeat(2, auto);
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    width: inherit;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.ow-attendance-tab-btn {
+    box-sizing: content-box;
+    grid-template-columns: 0.2fr 1.8fr;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    border: solid #0155b8 3px;
+    border-radius: 48px;
+}
+
+.ow-attendance-tab-icon,
+.ow-attendance-tab-label {
+    font-family: Lexend Bold;
+}
+
+#ow-attendance-content {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    width: inherit;
+    height: 80vh;
+}
+
+#ow-atb1 {
+    background-color: #0155b8;
+}
+
+#ow-ati1,
+#ow-atl1 {
+    color: #fff;
+}
+
+#ow-atb2 {
+    background-color: #00000000;
+}
+
+#ow-ati2,
+#ow-atl2 {
+    color: #0155b8;
+}
+
+.ow-attendance-page {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: #fff;
+}
+
+#ow-alp1 {
+    z-index: 1;
+}
+
+#ow-alp2 {
+    z-index: 0;
+}
+
+#ow-alp2 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#ow-alp2::-webkit-scrollbar {
+    border-radius: 48px;
+    width: 1vw;
+    background-color: #00000000;
+}
+
+#ow-alp2::-webkit-scrollbar-thumb {
+    border-radius: 48px;
+    width: inherit;
+    background-color: #33333324;
+}
+
+label,
+.ow-attendance-input {
+    color: #333;
+}
+
+label {
+    margin: 1rem 0 1rem 0;
+    font-family: Lexend Bold;
+    font-size: 24px;
+}
+
+.ow-attendance-input {
+    border: 0;
+    border-bottom: solid #0155b8 3px;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: Lexend Regular;
+    font-size: 24px;
+}
+
+#ow-attendance-action-btn {
+    border: 0;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #0155b8;
+    font-family: Lexend Bold;
+    font-size: 24px;
+    color: #fff;
+}
+
+.ow-attendance-log {
+    background-color: #fff;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    box-shadow: 0 0 4px #33333324;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 65vw;
+    border-radius: 12px;
+}
+
+.ow-attendance-log-label {
+    width: inherit;
+    text-align: left;
+    font-family: Lexend Regular;
+    font-size: 16px;
+    color: #333;
+}

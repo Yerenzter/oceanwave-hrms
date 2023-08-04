@@ -1,0 +1,66 @@
+#ow-sms-content {
+	box-sizing: content-box;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+
+#ow-sms-add-btn {
+	box-sizing: content-box;
+	display: grid;
+	grid-template-columns: 1fr 0fr;
+	justify-content: center;
+	align-content: center;
+	padding: 1rem;
+	width: auto;
+	height: auto;
+	position: absolute;
+	z-index: 9;
+	bottom: 0;
+	right: 0;
+	margin: 0 2rem 2rem 0;
+	border: solid #0155b8 3px;
+	border-radius: 48px;
+	background-color: #0155b8;
+}
+
+#ow-sms-add-icon {
+	font-size: 36px;
+	color: #fff;
+}
+
+#ow-sms-add-label {
+	font-family: Lexend Bold;
+	font-size: 0;
+	color: #fff;
+	transform: scale(0);
+}
+
+#ow-sms-no-content {
+	box-sizing: content-box;
+	display: grid; 
+	justify-content: center;
+	align-content: center;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	z-index: 0;
+}
+
+#ow-sms-no-content-icon,
+#ow-sms-no-content-label {
+	color: #33333324;
+	text-align: center;
+}
+
+#ow-sms-no-content-icon {
+	font-size: 64px;
+}
+
+#ow-sms-no-content-label {
+	font-family: Lexend Regular;
+	font-size: 24px;
+}

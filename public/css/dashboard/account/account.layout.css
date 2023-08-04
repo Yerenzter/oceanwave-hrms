@@ -1,0 +1,151 @@
+#ow-account-box,
+#ow-account-header,
+#ow-account-table,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    box-sizing: content-box;
+}
+
+#ow-account-box,
+#ow-account-header,
+#ow-account-table,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    display: grid;
+}
+
+#ow-account-box,
+#ow-account-header,
+#ow-account-table,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    justify-content: center;
+}
+
+#ow-account-header,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    align-content: center;
+}
+
+#ow-account-box,
+#ow-account-table {
+    align-content: flex-start;
+}
+
+#ow-account-box,
+#ow-account-header,
+#ow-account-table,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    position: relative;
+}
+
+#ow-account-box,
+#ow-account-header-box,
+.ow-account-table-row,
+#ow-account-header-id,
+#ow-account-header-profile,
+#ow-account-header-action,
+.ow-table-row-id,
+.ow-table-row-profile,
+.ow-table-row-action {
+    overflow: hidden;
+}
+
+#ow-account-table {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#ow-account-box {
+    width: inherit;
+    height: 90vh;
+}
+
+#ow-account-header {
+    width: inherit;
+    height: 10vh;
+}
+
+#ow-account-table {
+    width: inherit;
+    height: 80vh;
+}
+
+#ow-account-table::-webkit-scrollbar {
+    background-color: #33333310;
+    width: 1vw;
+    border-radius: 48px;
+}
+
+#ow-account-table::-webkit-scrollbar-thumb {
+    background-color: #33333348;
+    width: inherit;
+    border-radius: 48px;
+}
+
+#ow-account-header-box,
+.ow-account-table-row {
+    border-radius: 12px;
+}
+
+#ow-account-header-box {
+    margin-right: 1vw;
+    height: inherit;
+    background-color: #0155b8;
+}
+
+.ow-account-table-row {
+    background-color: #fff;
+    box-shadow: 0 0 4px #33333324;
+}
+
+.ow-account-header-label {
+    font-family: Lexend Bold;
+    color: #fff;
+    text-align: center;
+}
+
+.ow-table-data {
+    font-family: Lexend Light;
+    text-align: center;
+    color: #333;
+}
+
+.ow-table-name,
+.ow-table-phonenumber,
+.ow-table-email {
+    border-radius: 12px;
+    margin: 0 0.1rem 0 0.1rem;
+}

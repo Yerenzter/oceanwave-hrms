@@ -1,0 +1,4 @@
+function AppStart() {
+    InitializeDisplay();
+    LoadLexendFont();
+}

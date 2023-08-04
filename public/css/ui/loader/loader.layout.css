@@ -1,0 +1,48 @@
+#ow-loader {
+	box-sizing: content-box;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	justify-content: center;
+	align-content: center;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 999999999;
+	background-color: #f0f0f0;
+}
+
+.ow-dot {
+	box-sizing: content-box;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	width: auto;
+	height: auto;
+	margin: 0.5rem;
+	padding: 1rem;
+	border-radius: 48px;
+	background-color: #0155b824;
+}
+
+#dot1 {
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-direction: left;
+	animation-iteration-count: infinite;
+}
+
+#dot2 {
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-direction: left;
+	animation-delay: 0.2s;
+	animation-iteration-count: infinite;
+}
+
+#dot3 {
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-direction: left;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}

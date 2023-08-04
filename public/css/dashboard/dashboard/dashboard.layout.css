@@ -1,0 +1,67 @@
+#ow-dasboard-box,
+.ow-dashboard-sheet,
+.ow-dashboard-counter,
+.ow-dashboard-header {
+    box-sizing: content-box;
+}
+
+#ow-dashboard-box,
+.ow-dashboard-sheet,
+.ow-dashboard-counter,
+.ow-dashboard-header {
+    display: grid;
+}
+
+#ow-dashboard-box,
+.ow-dashboard-sheet,
+.ow-dashboard-couter,
+.ow-dashboard-header {
+    justify-items: center;
+}
+
+#ow-dashboard-box,
+.ow-dashboard-sheet,
+.ow-dashboard-counter,
+.ow-dashboard-header {
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-dashboard-box {
+    align-content: flex-start;
+}
+
+.ow-dashboard-sheet,
+.ow-dashboard-counter,
+.ow-dashboard-header {
+    align-content: center;
+}
+
+.ow-dashboard-counter-value,
+.ow-dashboard-header-label {
+    text-align: center;
+}
+
+#ow-dashboard-box {
+    overflow-y: scroll;
+}
+
+.ow-dashboard-sheet {
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 0 24px #33333324;
+}
+
+.ow-dashboard-counter-value {
+    font-family: Lexend ExtraBold;
+    color: #333;
+}
+
+.ow-dashboard-header {
+    background-color: #0155b8;
+}
+
+.ow-dashboard-header-label {
+    font-family: Lexend Medium;
+    color: #fff;
+}

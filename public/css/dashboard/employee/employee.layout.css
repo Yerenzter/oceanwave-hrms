@@ -1,0 +1,216 @@
+#ow-employee-box,
+#ow-employee-form, 
+#ow-employee-action,
+.ow-form-row,
+.ow-form-header,
+.ow-form-input,
+.ow-form-textbox,
+.ow-form-dropdown,
+.ow-dropdown-btn {
+    box-sizing: content-box;
+}
+
+#ow-employee-box,
+#ow-employee-form,
+#ow-employee-action,
+.ow-form-row,
+.ow-form-header,
+.ow-form-input,
+.ow-form-textbox,
+.ow-form-dropdown,
+.ow-dropdown-btn {
+    display: grid;
+}
+
+#ow-employee-box,
+#ow-employee-form,
+.ow-form-row,
+.ow-form-input,
+.ow-form-textbox,
+.ow-form-dropdown,
+.ow-dropdown-btn {
+    justify-content: center;
+}
+
+#ow-employee-action {
+    justify-content: right;
+}
+
+.ow-form-header {
+    justify-content: left;
+}
+
+#ow-employee-box,
+#ow-employee-action,
+.ow-form-row,
+.ow-form-header,
+.ow-form-input,
+.ow-form-textbox,
+.ow-form-dropdown,
+.ow-dropdown-btn {
+    align-content: center;
+}
+
+#ow-employee-form {
+    align-content: flex-start;
+}
+
+#ow-employee-box,
+#ow-employee-form,
+#ow-employee-action,
+.ow-form-row,
+.ow-form-header,
+.ow-form-input,
+.ow-form-textbox,
+.ow-form-dropdown,
+.ow-dropdown-btn {
+    position: relative;
+}
+ 
+#ow-employee-box {
+    overflow: hidden;
+}
+
+#ow-employee-form {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#ow-employee-form::-webkit-scrollbar {
+    width: 1vw;
+    border-radius: 48px;
+    background-color: #00000000;
+}
+
+#ow-employee-form::-webkit-scrollbar-thumb {
+    width: 1vw;
+    border-radius: 48px;
+    background-color: #0155b8;
+}
+
+#ow-employee-box {
+    width: inherit;
+    height: inherit;
+}
+
+#ow-employee-box {
+}
+
+#ow-employee-form {
+    width: inherit;
+    height: 80vh;
+}
+
+#ow-employee-action {
+    width: inherit;
+    height: 10vh;
+}
+
+.ow-form-row {
+    width: auto;
+    height: auto;
+}
+
+.ow-form-header {
+    grid-template-columns: repeat(2, auto);
+    width: inherit;
+    height: auto;
+    padding: 1rem;
+}
+
+.ow-form-icon,
+.ow-form-header-label {
+    font-family: Lexend Medium;
+    color: #333;
+}
+
+.ow-form-input {
+    grid-template-columns: repeat(1, auto);
+    width: inherit;
+    height: auto;
+}
+
+.ow-form-textbox,
+.ow-form-dropdown {
+    grid-template-columns: repeat(2, auto);
+}
+
+.ow-form-textbox {
+    height: auto;
+    padding: 1rem;
+    border-bottom: solid #0155b8 3px;
+}
+
+.ow-form-text,
+.ow-clear-btn,
+.ow-dropdown-btn {
+    padding: 0.5rem;
+}
+
+.ow-form-text,
+.ow-clear-btn,
+.ow-dropdown-label,
+.ow-dropdown-icon {
+    font-family: Lexend Regular;
+}
+
+.ow-form-text,
+.ow-clear-btn {
+    border: 0;
+    background-color: #00000000;
+    color: #333;
+}
+
+.ow-form-dropdown {
+    grid-template-columns: repeat(1, auto);
+    width: 60vw;
+    height: auto;
+    padding: 1rem;
+}
+
+.ow-dropdown-btn {
+    grid-template-columns: repeat(2, auto);
+    width: inherit;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    border: solid #0155b8 3px;
+    border-radius: 48px;
+}
+
+.ow-dropdown-label,
+.ow-dropdown-icon {
+    height: inherit;
+    color: #0155b8;
+}
+
+#ow-action-btn {
+    margin-right: 0.5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 48px;
+    background-color: #0155b8;
+    font-family: Lexend Bold;
+    color: #fff;
+}
+
+select {
+    border: 0;
+    border-radius: 12px;
+    box-sizing: 0 0 24px #33333324;
+    font-family: Lexend Regular;
+    font-size: 18px;
+    color: #0155b8;
+}
+
+option {
+    border-radius: 12px;
+    font-family: Lexend Regular;
+    color: #0155b8;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.ow-clear-btn {
+    visibility: hidden;
+}

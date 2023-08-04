@@ -1,0 +1,72 @@
+@media screen and (min-width: 99px) {}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {
+    .ow-form-text,
+    .ow-clear-btn,
+    .ow-dropdown-label,
+    .ow-dropdown-icon {
+        font-size: 16px;
+    }
+    
+    .ow-form-header-label {
+        font-size: 24px;
+    }
+    
+    .ow-form-text {
+        width: 50vw;
+    }
+    
+    #ow-action-btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 474px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+    #ow-employee-form {
+        width: inherit;
+    }
+    
+    .ow-form-row {
+        width: inherit;
+        justify-content: flex-start;
+    }
+    
+    .ow-form-input {
+        grid-template-columns: repeat(4, auto);
+        justify-content: flex-start;
+    }
+    
+    .ow-form-textbox {
+        margin: 0 1rem 0 1rem;
+        width: auto;
+    }
+    
+    .ow-form-text {
+        width: 10vw;
+    }
+    
+    .ow-form-dropdown {
+        grid-template-columns: repeat(2, auto);
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+    
+    .ow-dropdown-btn {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2560px) {}

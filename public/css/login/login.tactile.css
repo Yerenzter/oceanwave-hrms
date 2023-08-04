@@ -1,0 +1,4 @@
+#ow-login-username-input:focus,
+#ow-login-password-input:focus {
+    outline: none;
+}

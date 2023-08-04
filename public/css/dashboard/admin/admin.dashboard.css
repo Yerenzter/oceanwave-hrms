@@ -1,0 +1,13 @@
+@import "admin.dashboard.layout.css";
+@import "admin.dashboard.responsive.css";
+@import "../dashboard.css";
+@import "../dashboard/dashboard.css";
+@import "../account/account.css";
+@import "../attendance/attendance.css";
+@import "../employee/employee.css";
+@import "../leave/leave.css";
+@import "../organization/organization.css";
+@import "../payroll/payroll.css";
+@import "../sms/sms.css";
+@import "../../../root/root.css";
+@import "../../../lib/material/iconfont/material-icons.css";

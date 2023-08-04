@@ -1,0 +1,30 @@
+#ow-snackbar {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1.7fr 0.3fr;
+    justify-content: center;
+    align-content: center;
+    border-radius: 12px;
+    background-color: #0155b8;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    box-shadow: 0 0 24px #33333324;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 100ms;
+}
+
+#ow-snackbar-label,
+#ow-snackbar-close {
+    color: #fff;
+}
+
+#ow-snackbar-label {
+    font-family: Lexend Regular;
+}
+
+#ow-snackbar-close {
+    border: 0;
+    background-color: #00000000;
+}

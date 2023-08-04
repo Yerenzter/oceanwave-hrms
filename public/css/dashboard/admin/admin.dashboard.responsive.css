@@ -1,0 +1,22 @@
+@media screen and (min-width: 99px) {
+    .ow-page {
+	width: inherit;
+	height: 90vh;
+    }
+}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 436px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

@@ -1,0 +1,13 @@
+* {
+	transition: all 200ms;
+}
+
+#ow-sms-add-btn:hover {
+	grid-template-columns: 0.2fr 1.8fr;
+}
+
+#ow-sms-add-btn:hover
+#ow-sms-add-label {
+	font-size: 24px;
+	transform: scale(1);
+}

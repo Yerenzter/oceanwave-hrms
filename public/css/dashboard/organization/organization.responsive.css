@@ -1,0 +1,37 @@
+@media screen and (min-width: 99px) {}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 474px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+    .ow-designation-data,
+    .ow-department-data {
+        padding: 0.5rem;
+        width: 50vw;
+        height: 5vh;
+    }
+    
+    .ow-designation-id,
+    .ow-department-id,
+    .ow-designation-label,
+    .ow-department-label {
+        font-size: 24px;
+        padding: 0.5rem;
+    }
+    
+    .ow-designation-edit,
+    .ow-designation-delete,
+    .ow-department-edit,
+    .ow-department-delete {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 2559px) {}

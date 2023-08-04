@@ -1,0 +1,140 @@
+#ow-logo,
+#ow-login,
+#ow-copyright,
+#ow-login-box,
+#ow-login-header,
+#ow-login-form,
+#ow-login-username,
+#ow-login-password,
+#ow-login-message,
+#ow-login-action {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-logo,
+#ow-login,
+#ow-copyright,
+#ow-login-box,
+#ow-login-header,
+#ow-login-form,
+#ow-login-message,
+#ow-login-action {
+    align-content: center;
+}
+
+#ow-login-header-label,
+#ow-login-header-advice,
+#ow-login-btn {
+    color: #fff;
+}
+
+#ow-login-username-input,
+#ow-login-password-input,
+#ow-message-label,
+.ow-icon {
+    color: #333;
+}
+
+#ow-logo,
+#ow-login,
+#ow-copyright {
+    width: 100vw;
+}
+
+#ow-logo-content,
+#ow-login-header {
+    font-family: Lexend ExtraBold;
+}
+
+#ow-login-header-label,
+#ow-login-header-advice {
+    width: inherit;
+    text-align: center;
+}
+
+#ow-login-form {
+}
+
+#ow-login-username,
+#ow-login-password {
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: #0155b8;
+}
+
+#ow-login-username-input,
+#ow-login-password-input {
+    padding: 0;
+    border: 0;
+    background-color: #00000000;
+    font-family: Lexend Light;
+    color: #333;
+}
+
+#ow-login-btn,
+#ow-signup-btn {
+    border: 0;
+    border-radius: 48px;
+    font-family: Lexend Bold;
+}
+
+#ow-logo {
+    height: 20vh;
+    background-color: #0155b8;
+}
+
+#ow-login {
+    height: 70vh;
+}
+
+#ow-login-box {
+    height: inherit;
+}
+
+#ow-login-header-advice {
+    font-family: Lexend Regular;
+    font-size: 0;
+}
+
+#ow-login-btn {
+    background-color: #0155b8;
+}
+
+#ow-signup-btn {
+    border-style: solid;
+    border-color: #0155b8;
+    background-color: #00000000;
+    color: #0155b8;
+}
+
+#ow-login-message-label {
+    font-family: Lexend Light;
+}
+
+#ow-copyright {
+    height: 10vh;
+}
+
+#ow-copyright-label {
+    font-family: Lexend Regular;
+}
+
+.ow-textbox {
+    grid-template-columns: repeat(3, auto);
+}
+
+.ow-icon-left {
+    text-align: left;
+}
+
+.ow-icon-right {
+    text-align: right;
+}
+
+.ow-clear-btn {
+    visibility: hidden;
+}

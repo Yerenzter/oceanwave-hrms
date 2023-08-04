@@ -1,0 +1,224 @@
+#ow-organization-box,
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+#ow-organization-page,
+.ow-organization-page,
+.ow-pg-header,
+.ow-pg-content,
+.ow-add-input-bar,
+.ow-pg-content,
+.ow-designation-data,
+.ow-department-data {
+    box-sizing: content-box;
+}
+
+#ow-organization-box,
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+#ow-organization-page,
+.ow-organization-page,
+.ow-pg-header,
+.ow-pg-content,
+.ow-add-input-bar,
+.ow-pg-content,
+.ow-designation-data,
+.ow-department-data {
+    display: grid;
+}
+
+#ow-organization-box,
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+#ow-organization-page,
+.ow-organization-page,
+.ow-pg-header,
+.ow-pg-content,
+.ow-add-input-bar,
+.ow-pg-content,
+.ow-designation-data,
+.ow-department-data {
+    justify-content: center;
+}
+
+#ow-organization-box,
+.ow-organization-page,
+.ow-pg-content {
+    align-content: flex-start;
+}
+
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+#ow-organization-page,
+.ow-pg-header,
+.ow-add-input-bar,
+.ow-designation-data,
+.ow-department-data {
+    align-content: center;
+}
+
+#ow-organization-box,
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+#ow-organization-page,
+.ow-pg-header,
+.ow-pg-content,
+.ow-add-input-bar,
+.ow-pg-content,
+.ow-designation-data,
+.ow-department-data {
+    position: relative;
+}
+
+.ow-organization-page {
+    position: absolute;
+}
+
+#ow-organization-box,
+#ow-organization-tab,
+.ow-tab-btn-box,
+.ow-tab-btn,
+.ow-designation-data,
+.ow-department-data {
+    overflow: hidden;
+}
+
+#ow-organization-box {
+    width: inherit;
+    height: inherit;
+}
+
+#ow-organization-tab {
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+    height: 10vh;
+}
+
+.ow-tab-btn-box {
+    width: auto;
+    height: inherit;
+}
+
+#ow-tb1 {
+    background-color: #0155b8;
+}
+
+#ow-tbi1,
+#ow-tbl1 {
+    color: #fff;
+}
+
+.ow-tab-btn {
+    grid-template-columns: repeat(2, auto);
+    padding: 1rem;
+    border: solid #0155b8 3px;
+    border-radius: 48px;
+}
+
+.ow-tab-btn-icon,
+.ow-tab-btn-label {
+    font-family: Lexend Bold;
+    color: #0155b8;
+}
+
+#ow-organization-page {
+    width: inherit;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+#ow-pg1 {
+    z-index: 1;
+}
+
+#ow-pg2 {
+    z-index: 0;
+}
+
+.ow-organization-page {
+    width: inherit;
+    height: inherit;
+    background-color: #fff;
+}
+
+.ow-pg-header {
+    width: inherit;
+    height: 10vh;
+}
+
+.ow-add-input-bar {
+    grid-template-columns:  auto 0.2fr;
+    width: auto;
+    height: auto;
+    border-radius: 48px;
+    background-color: #33333324;
+}
+
+.ow-add-input-text,
+.ow-add-btn {
+    padding: 1rem;
+    border: 0;
+    background-color: #00000000;
+    font-family: Lexend Light;
+}
+
+.ow-add-input-text {
+    width: 15vw;
+    color: #333;
+}
+
+.ow-add-btn {
+    border-radius: 48px;
+    background-color: #0155b8;
+    color: #fff;
+}
+
+.ow-pg-content {
+    width: inherit;
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ow-designation-data,
+.ow-department-data {
+    grid-template-columns: 0.2fr 1.4fr 0.2fr 0.2fr;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 4px #33333324;
+}
+
+.ow-designation-id,
+.ow-department-id,
+.ow-designation-label,
+.ow-designation-edit,
+.ow-designation-delete,
+.ow-department-label,
+.ow-department-edit,
+.ow-department-delete {
+    color: #333;
+}
+
+.ow-designation-edit,
+.ow-designation-delete,
+.ow-department-edit,
+.ow-department-delete {
+    border: 0;
+    border-radius: 48px;
+    width: auto;
+    height: auto;
+    background-color: #00000000;
+}
+
+.ow-designation-id,
+.ow-department-id,
+.ow-designation-label,
+.ow-department-label {
+    font-family: Lexend Light;
+    border-radius: 12px;
+}

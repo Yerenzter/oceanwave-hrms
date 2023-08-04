@@ -1,0 +1,117 @@
+@media screen and (min-width: 99px) {
+
+    #ow-signup-header,
+    #ow-signup-form {
+        width: inherit;
+    }
+    
+    #ow-signup-box,
+    #ow-role-spinner,
+    #ow-signup-action {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #ow-username-box,
+    #ow-password-box {
+        grid-template-columns: 0.2fr 1.6fr 0.2fr;
+    }
+    
+    #ow-username,
+    #ow-password,
+    .ow-clear-btn,
+    .ow-signup-icon {
+        font-size: 24px;
+    }
+    
+    #ow-signup-box {
+        width: inherit;
+        height: inherit;
+    }
+    
+    #ow-signup-header {
+        height: 10vh;
+    }
+    
+    #ow-signup-form {
+        height: 70vh;
+    }
+    
+    #ow-role-spinner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0 1rem 0;
+    }
+    
+    #ow-spinner-btn {
+        grid-template-columns: 1.8fr 0.2fr;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    #ow-signup-btn {
+        font-size: 24px;
+    }
+    
+    .ow-spinner-btn {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1190px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 474px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+
+    #ow-signup-header,
+    #ow-signup-form {
+        height: inherit;
+    }
+    
+    #ow-signup-box {
+        grid-template-columns: repeat(2, 1fr);
+        width: 75vw;
+        height: 65vh;
+        border-radius: 12px;
+        box-shadow: 0 0 24px #33333324;
+    }
+    
+    #ow-signup-header {
+        width: 25vw;
+    }
+    
+    #ow-signup-header-label {
+        font-size: 48px;
+    }
+    
+    #ow-signup-form {
+        width: 50vw;
+    }
+    
+    #ow-username,
+    #ow-password,
+    .ow-clear-btn,
+    .ow-signup-icon {
+        font-size: 20px;
+    }
+    
+    #ow-signup-btn {
+        font-size: 24px;
+    }
+    
+    .ow-spinner-item {
+        padding: 0.5rem;
+    }
+    
+    .ow-spinner-btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

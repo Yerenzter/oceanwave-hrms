@@ -1,0 +1,15 @@
+#ow-username:focus,
+#ow-password:focus {
+    outline: none;
+}
+
+.ow-spinner-btn:active {
+    background-color: #33333348;
+    transition: all 300ms;
+}
+
+.ow-spinner-btn:hover {
+    background-color: #33333324;
+    transition: all 300ms;
+}
+

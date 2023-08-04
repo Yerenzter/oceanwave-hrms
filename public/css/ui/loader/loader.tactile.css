@@ -1,0 +1,13 @@
+@keyframes blink {
+	33% {
+		background-color: #0155b824;
+	}
+	
+	66% {
+		background-color: #0155b8;
+	}
+	
+	99% {
+		background-color: #0155b824;
+	}
+}

@@ -1,0 +1,74 @@
+@media screen and (min-width: 99px) {
+    #ow-dashboard-box {
+        width: inherit;
+        height: inherit;
+    }
+    
+    #ow-dashboard-box {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    
+    .ow-dashboard-sheet {
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        width: 45vw;
+        height: 20vh;
+    }
+    
+    .ow-dashboard-counter {
+        width: inherit;
+        height: 15vh;
+    }
+    
+    .ow-dashboard-counter-value {
+        font-size: 36px;
+    }
+    
+    .ow-dashboard-header {
+        width: inherit;
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 474px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+
+    .ow-dashboard-counter,
+    .ow-dashboard-header {
+        width: inherit;
+    }
+    
+    #ow-dashboard-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .ow-dashboard-sheet {
+        margin: 2rem 0 2rem 0;
+        width: 18vw;
+        height: 25vh;
+    }
+    
+    .ow-dashboard-counter {
+        height: 20vh;
+    }
+    
+    .ow-dashboard-counter-value {
+        font-size: 48px;
+    }
+    
+    .ow-dashboard-header {
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

@@ -1,0 +1,34 @@
+@media screen and (min-width: 99px) {}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {
+    #ow-snackbar {
+        width: 80vw;
+        height: 7vh;
+    }
+}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 474px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+    #ow-snackbar {
+        margin: 0 1rem 1rem 0;
+        padding: 1rem;
+        width: 30vw;
+        height: 7vh;
+        right: 0;
+    }
+    
+    #ow-snackbar-label {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

@@ -1,0 +1,45 @@
+@media screen and (min-width: 99px) {}
+
+@media screen and (min-width: 119px) {}
+
+@media screen and (min-width: 319px) {}
+
+@media screen and (min-width: 374px) {}
+
+@media screen and (min-width: 434px) {}
+
+@media screen and (min-width: 767px) {}
+
+@media screen and (min-width: 1023px) {
+    #ow-account-header-box,
+    .ow-account-table-row {
+        grid-template-columns: 0.5fr 4.5fr 1fr;
+        width: 75vw;
+    }
+    
+    .ow-account-table-row {
+        margin: 1rem 0 0 0  ;
+        height: 8vh;
+    }
+    
+    #ow-account-header-profile,
+    .ow-table-row-profile {
+        grid-template-columns: 1.5fr 0.7fr 1.3fr .5fr;
+    }
+    
+    .ow-account-header-label {
+        font-size: 24px;
+    }
+    
+    .ow-table-data {
+        padding: 0.3rem;
+    }
+    
+    .ow-table-row-action {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (min-width: 1439px) {}
+
+@media screen and (min-width: 2559px) {}

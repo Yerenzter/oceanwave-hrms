@@ -1,0 +1,491 @@
+#ow-dashboard,
+#ow-menu-backdrop,
+#ow-profile,
+#ow-avatar-box,
+#ow-user-id,
+#ow-menu-item,
+#ow-menu-action,
+.ow-menu-action-btn,
+.ow-menu-action-label,
+#ow-version,
+#ow-sandbox,
+#ow-menu-bar,
+#ow-icon-1,
+#ow-icon-2,
+#ow-menu-bar-logo,
+#ow-page-box,
+.ow-menu-btn,
+.ow-menu-label,
+.ow-accordion,
+.ow-accordion-btn {
+    box-sizing: content-box;
+    display: grid;
+}
+
+#ow-dashboard,
+#ow-menu-backdrop,
+#ow-profile,
+#ow-menu-item,
+#ow-avatar-box,
+#ow-user-id,
+#ow-menu-action,
+.ow-menu-action-btn,
+.ow-menu-action-label,
+#ow-version,
+#ow-sandbox,
+#ow-menu-bar,
+#ow-icon-1,
+#ow-icon-2,
+#ow-menu-bar-logo,
+#ow-page-box,
+.ow-accordion,
+.ow-accordion-btn {
+    justify-content: center;
+}
+
+.ow-menu-btn,
+.ow-menu-label {
+    justify-content: flex-start;
+}
+
+#ow-profile,
+#ow-menu-backdrop,
+#ow-avatar-box,
+#ow-user-id,
+#ow-menu-item,
+#ow-menu-action,
+.ow-menu-action-btn,
+.ow-menu-action-label,
+#ow-version,
+#ow-menu-bar,
+#ow-icon-1,
+#ow-icon-2,
+#ow-menu-bar-logo,
+.ow-menu-btn,
+.ow-accordion,
+.ow-accordion-btn {
+    align-content: center;
+}
+
+#ow-dashboard,
+#ow-sandbox,
+#ow-menu-item,
+#ow-page-box {
+    align-content: flex-start;
+}
+
+#ow-username,
+.ow-action-value {
+    font-family: Lexend Medium;
+}
+
+#ow-role,
+#ow-version-name {
+    font-family: Lexend Regular;
+}
+
+#ow-username,
+#ow-role,
+.ow-menu-icon,
+.ow-menu-btn-value,
+.ow-accordion-con,
+.ow-accordion-btn-value {
+    color: #fff;
+}
+
+#ow-dashboard {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-menu {
+    background-color: #0155b8;
+}
+
+#ow-menu-icon,
+#ow-account-icon {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border-radius: 48px;
+    background-color: #00000000;
+}
+
+#ow-profile {
+    
+}
+
+#ow-avatar {
+    font-size: 86px;
+    color: #fff;
+    text-align: center;
+}
+
+#ow-menu-item:-webkit-scrollbar {
+    width: 5vw;
+    border: 0;
+    border-radius: 48px;
+    background-color: #33333324;
+}
+
+#ow-menu-backdrop {
+    position: relative;
+    background-color: #33333348;
+}
+
+
+#ow-mb1,
+#ow-mb2,
+#ow-mb3,
+#ow-mb4,
+#ow-mb5,
+#ow-mb6,
+#ow-mb7,
+#ow-mb8,
+#ow-mb9 {
+    border-radius: 48px;
+}
+
+#ow-mb1 {
+    background-color: #fff;
+}
+
+#ow-mb2,
+#ow-mb3,
+#ow-mb4,
+#ow-mb5,
+#ow-mb6,
+#ow-mb7,
+#ow-mb8,
+#ow-mb9 {
+    background-color: #00000000;
+}
+
+#ow-menu {
+    position: relative;
+    overflow: hidden;
+}
+
+.ow-menu-btn-value,
+.ow-accordion-btn-value {
+    font-family: Lexend Bold;
+    text-align: center;
+    text-indent: 8px;
+}
+
+#ow-page-box {
+    position: relative;
+}
+
+.ow-black {
+    color: #333;
+}
+
+.ow-action-icon,
+.ow-accordion-icon,
+.ow-action-value {
+    color: #fff;
+}
+
+.ow-accordion {
+    
+}
+
+.ow-accordion-btn-value {
+    text-align: left;
+}
+
+#ow-account-menu {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem 1rem 0 0;
+    border: solid #33333324 1px;
+    border-radius: 12px;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 24;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 24px #33333324;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: all 200ms;
+}
+
+#ow-account-profile {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-content: center;
+    width: 24vw;
+    border-bottom: solid #33333324 2px;
+}
+
+#ow-account-option {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: auto;
+}
+
+#ow-account-profile-icon {
+    font-size: 86px;
+    color: #33333324;
+    text-align: center;
+}
+
+#ow-account-profile-name,
+#ow-account-profile-role {
+    margin: 0 0 0.5rem;
+    font-family: Lexend Regular;
+    color: #333;
+    text-align: center;
+}
+
+#ow-account-profile-name {
+    font-size: 24px;
+}
+
+.ow-account-option-btn {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+    justify-content: center;
+    align-content: center;
+    border-bottom: solid #33333324 1.5px;
+    padding: 1rem;
+    position: relative;
+}
+
+.ow-option-icon,
+.ow-option-label {
+    color: #333;
+}
+
+.ow-option-icon {
+    height: inherit;
+}
+
+.ow-option-label {
+    font-family: Lexend Regular;
+    font-size: 18px;
+}
+
+#ow-account-settings {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99999;
+    transform: scale(0);
+    transform-origin: flat;
+    opacity: 0;
+}
+
+#ow-account-settings-header {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: flex-start;
+    align-content: center;
+    width: inherit;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#ow-account-settings-back {
+    padding: 1rem;
+    border-radius: 48px;
+    font-size: 36px;
+    color: #333;
+}
+#ow-account-settings-content {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: 90vh;
+    position: relative;
+}
+
+#ow-account-settings-content-profile {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    height: inherit;
+    position: relative;
+}
+
+#ow-account-settings-profile-content-icon {
+    font-size: 124px;
+    color: #333;
+    text-align: center;
+}
+
+#ow-account-settings-profile-content-username {
+    font-family: Lexend Bold;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+#ow-account-settings-profile-content-role {
+    font-family: Lexend Regular;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#ow-account-settings-content-information {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    width: 70vw;
+    height: inherit;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#ow-account-settings-content-information::-webkit-scrollbar {
+    width: 1vw;
+    border-radius: 48px;
+    background-color: #00000000;
+}
+
+#ow-account-settings-content-information::-webkit-scrollbar-thumb {
+    width: 1vw;
+    border-radius: 48px;
+    background-color: #0155b8;
+}
+
+.ow-account-settings-profile-data {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: auto;
+    position: rleative;
+    margin: 0 0 2rem 0;
+    border-bottom: solid #33333324 0;
+}
+
+.ow-account-settings-profile-data-header {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    align-content: center;
+    width: inherit;
+    height: auto;
+    position: relative;
+}
+
+.ow-account-settings-profile-data-header-icon {
+    padding: 1rem;
+    color: #333;
+}
+
+.ow-account-settings-profile-data-header-label {
+    padding: 1rem;
+    font-family: Lexend Bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.ow-account-settings-profile-data-info {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: flex-start;
+    align-content: center;
+    width: inherit;
+    height: auto;
+    position: relative;
+}
+
+.ow-account-settings-profile-data-info-box {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.ow-account-settings-profile-data-info-header {
+    font-family: Lexend Regular;
+    font-size: 12px;
+    color: #33333348;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.ow-account-settings-profile-data-info-label {
+    font-family: Lexend Medium;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#ow-account-settings-content-action {
+    box-sizing: content-box;
+    display: grid;
+    justify-content: flex-end;
+    align-content: center;
+    width: inherit;
+    height: 10vh;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+}
+
+#ow-account-settings-content-action-btn {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+    justify-content: center;
+    align-content: center;
+    margin-right: 1rem;
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 1rem;
+    border-radius: 48px;
+    background-color: #33333324;
+}
+
+#ow-account-settings-content-action-icon {
+    color: #333;
+}
+
+#ow-account-settings-content-action-label {
+    font-family: Lexend Bold;
+    font-size: 18px;
+    color: #333;
+}

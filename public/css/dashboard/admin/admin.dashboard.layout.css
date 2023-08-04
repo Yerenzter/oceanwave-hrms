@@ -1,0 +1,41 @@
+.ow-page {
+    box-sizing: content-box;
+}
+
+.ow-page {
+    display: grid;
+}
+
+.ow-page {
+    justify-content: center;
+}
+
+.ow-page {
+    align-content: center;
+}
+
+.ow-page {
+    background-color: #fff;
+}
+
+
+.ow-page {
+    position: absolute;
+    overflow: hidden;
+}
+
+#ow-p1 {
+    z-index: 1;
+}
+
+#ow-p2,
+#ow-p3,
+#ow-p4,
+#ow-p5,
+#ow-p6,
+#ow-p7,
+#ow-p8,
+#ow-p9,
+#ow-p11 {
+    z-index: 0;
+}

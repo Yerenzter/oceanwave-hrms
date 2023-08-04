@@ -1,0 +1,160 @@
+@media screen and (min-width: 99px) {
+    #ow-greet-label {
+        font-size: 18px;
+    }
+
+    #ow-start-btn {
+        padding: 0.5rem;
+        border-radius: 48px;
+        font-size: 8px;
+    }
+
+    #ow-loading-label {
+        font-size: 2px;
+    }
+
+    .ow-divider {
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 119px) {
+    #ow-greet-label {
+        font-size: 36px;
+    }
+
+    #ow-start-btn {
+        padding: 1rem;
+        font-size: 24px;
+    }
+
+    #ow-loading-label {
+        font-size: 12px;
+    }
+
+    .ow-divider {
+        margin: 0 0 1rem 0;
+    }
+}
+
+@media screen and (min-width: 319px) {
+    #ow-greet-label {
+        font-size: 40px;
+    }
+
+    #ow-start-btn {
+        font-size: 24px;
+    }
+
+    #ow-loading-label {
+        font-size: 16px;
+    }
+
+    .ow-divider {
+
+    }
+}
+
+@media screen and (min-width: 374px) {
+    #ow-greet-label {
+        font-size: 52px;
+    }
+
+    #ow-start-btn {
+        font-size: 32px;
+    }
+
+    #ow-loading-label {
+        font-size: 18px;
+    }
+
+    .ow-divider {
+    }
+}
+
+@media screen and (min-width: 434px) {
+    #ow-greet-label {
+        font-size: 56px;
+    }
+
+    #ow-start-btn {
+        font-size: 38px;
+    }
+
+    #ow-loading-label {
+        font-size: 24px;
+    }
+
+    .ow-divider {
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #ow-greet-label {
+        font-size: 64px;
+    }
+
+    #ow-start-btn {
+        font-size: 44px;
+    }
+
+    #ow-loading-label {
+        font-size: 28px;
+    }
+
+    .ow-divider {
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #ow-greet-label {
+        font-size: 96px;
+    }
+
+    #ow-start-btn {
+        font-size: 40px;
+    }
+
+    #ow-loading-label {
+        font-size: 22px;
+    }
+
+    .ow-divider {
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    #ow-greet-label {
+        font-size: 150px;
+    }
+
+    #ow-start-btn {
+        font-size: 54px;
+    }
+
+    #ow-loading-label {
+        font-size: 24px;
+    }
+
+    .ow-divider {
+    }
+}
+
+@media screen and (min-width: 2559px) {
+    #ow-greet-label {
+        font-size: 180px;
+    }
+
+    #ow-start-btn {
+        padding: 2rem;
+        border-radius: 86px;
+        font-size: 72px;
+    }
+
+    #ow-loading-label {
+        font-size: 44px;
+    }
+
+    .ow-divider {
+    }
+}

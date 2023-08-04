@@ -1,0 +1,10 @@
+.ow-op-text-input:focus,
+.ow-add-input-text {
+	outline: none;
+}
+
+.ow-designation-label,
+.ow-department-label {
+	outline-width: 1px;
+	outline-color: #0155b8;
+}
