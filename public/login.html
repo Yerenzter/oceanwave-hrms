@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#0155b8">
+        <meta name="author" content="Yerenzter">
+        <meta name="description" content="Signup or log in using OceanWave account. The account information is manageable and open source which store your data in your local machine.">
+        <title>Ocean Wave | Login or Signup your account.</title>
+        <link rel="stylesheet" href="css/login/login.css">
+    </head>
+    <body onload="AppStart()">
+        <div id="root">
+            <div id="ow-logo">
+                <span id="ow-logo-content">Ocean Wave</span>
+            </div>
+            <div id="ow-login">
+                <div id="ow-login-box">
+                    <div id="ow-login-header">
+                        <span id="ow-login-header-label">Hi there!</span>
+                        <span id="ow-login-header-advice">If you new to Ocean Wave, please sign up to create the a new organizational account.</span>
+                    </div>
+                    <div id="ow-login-form">
+                        <div id="ow-login-username" class="ow-textbox">
+                            <span id="ow-person" class="material-icons-outlined ow-icon ow-icon-left">person</span>
+                            <input type="text" id="ow-login-username-input" class="ow-text-input" placeholder="Username">
+                            <span class="material-icons-outlined ow-icon ow-clear-btn">clear</span>
+                        </div>
+                        <div id="ow-login-password" class="ow-textbox">
+                            <span id="ow-lock" class="material-icons-outlined ow-icon ow-icon-left">lock</span>
+                            <input type="password" id="ow-login-password-input" class="ow-text-input" placeholder="Password">
+                            <span class="material-icons-round ow-icon ow-clear-btn">clear</span>
+                        </div>
+                        <div id="ow-login-message">
+                            <span id="ow-login-message-label">You must login first.</span>
+                        </div>
+                        <div id="ow-login-action">
+                            <button id="ow-login-btn">Login</button>
+                            <button id="ow-signup-btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ow-copyright">
+                <span id="ow-copyright-label">Ocean Wave 2023 &copy;</span>
+            </div>
+        </div>
+        
+        <script src="core/system/screen.js" type="text/javascript" defer="true"></script>
+        <script src="js/app/app.js" type="text/javascript" defer="true"></script>
+        <script src="js/app/font.js" type="text/javascript" defer="true"></script>
+        <script src="js/login/login.js" type="module" defer="true"></script>
+    </body>
+</html>

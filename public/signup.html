@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#0155b8">
+    <meta name="author" content="Yerenzter">
+    <meta name="description" content="Sign up to create and be a member of Ocean Wave.">
+    <title>Ocean Wave | Sign up</title>
+    <link rel="stylesheet" href="css/signup/signup.css">
+</head>
+
+<body onload="AppStart()">
+    <div id="root">
+        <div id="ow-header">
+            <span id="ow-header-label">Ocean Wave</span>
+        </div>
+        
+        <div id="ow-signup">
+            
+            <div id="ow-signup-box">
+                <div id="ow-signup-header">
+                    <span id="ow-signup-header-label">Sign up</span>
+                </div>
+                
+                <div id="ow-signup-form">
+                    <div id="ow-username-box">
+                        <span class="material-icons-outlined ow-signup-icon">person</span>
+                        <input type="text" id="ow-username" class="ow-text-input" placeholder="Create username">
+                        <button class="material-icons-outlined ow-clear-btn">close</button>
+                    </div>
+                    
+                    <div id="ow-password-box">
+                        <span class="material-icons-outlined ow-signup-icon">lock</span>
+                        <input type="password" id="ow-password" class="ow-text-input" placeholder="Create password">
+                        <button class="material-icons-outlined ow-clear-btn">close</button>
+                    </div>
+                    
+                    <div id="ow-role-spinner">
+                        <div id="ow-spinner-btn">
+                            <span id="ow-role-spinner-label">Set role</span>
+                            <span id="ow-role-spinner-btn" class="material-icons-outlined">expand_more</span>
+                        </div>
+                        <div id="ow-spinner-item">
+                            <span class="ow-spinner-btn">Admin</span>
+                            <span class="ow-spinner-btn">Employee</span>
+                            <span class="ow-spinner-btn">HR Manager</span>
+                            <span class="ow-spinner-btn">HR Officer</span>
+                            <span class="ow-spinner-btn">Supervisor</span>
+                            <span class="ow-spinner-btn">Auditor</span>
+                        </div>
+                    </div>
+                    
+                    <div id="ow-signup-action">
+                        <button id="ow-signup-btn">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ow-copyright">
+            <span id="ow-copyright-label">Ocean Wave 2023 &copy;</span>
+        </div>
+    </div>
+    
+    <script src="core/system/screen.js" type="text/javascript" defer="true"></script>
+    <script src="js/app/app.js" type="text/javascript" defer="true"></script>
+    <script src="js/app/font.js" type="text/javascript" defer="true"></script>
+    <script src="js/signup/signup.js" type="module" defer="true"></script>
+</body>
+
+</html>

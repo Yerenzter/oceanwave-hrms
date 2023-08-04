@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0155b8">
+    <meta name="author" content="Yerenzter">
+    <meta name="description" content="The admin dashboard.">
+    <title>Ocean Wave | Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard/admin/admin.dashboard.css">
+</head>
+
+<body onload="AppStart()">
+    <div id="root">
+        <div id="ow-loader">
+            <div id="dot1" class="ow-dot"></div>
+            <div id="dot2" class="ow-dot"></div>
+            <div id="dot3" class="ow-dot"></div>
+        </div>
+        
+        <div id="ow-account-menu">
+            <div id="ow-account-profile">
+                <span id="ow-account-profile-icon" class="material-icons-outlined">person</span>
+                <span id="ow-account-profile-name">Username</span>
+                <span id="ow-account-profile-role">Role</span>
+            </div>
+            <div id="ow-account-option">
+                <div class="ow-account-option-btn">
+                    <span class="material-icons-outlined ow-option-icon">settings</span>
+                    <span class="ow-option-label">Account settings</span>
+                </div>
+                <div class="ow-account-option-btn">
+                    <span class="material-icons-outlined ow-option-icon">help_outline</span>
+                    <span class="ow-option-label">Help</span>
+                </div>
+                <div class="ow-account-option-btn">
+                    <span class="material-icons-outlined ow-option-icon">close</span>
+                    <span class="ow-option-label">Close</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ow-account-settings">
+            <div id="ow-account-settings-header">
+                <span id="ow-account-settings-back" class="material-icons-outlined">arrow_back</span>   
+            </div>
+            <div id="ow-account-settings-content">
+                <div id="ow-account-settings-content-profile">
+                    <span id="ow-account-settings-profile-content-icon" class="material-icons-outlined">person</span>
+                    <span id="ow-account-settings-profile-content-username">Username</span>
+                    <span id="ow-account-settings-profile-content-role">Role</span>
+                </div>
+                
+                <div id="ow-account-settings-content-information">
+                    <div class="ow-account-settings-profile-data">
+                        <div class="ow-account-settings-profile-data-header">
+                            <span class="material-icons-outlined ow-account-settings-profile-data-header-icon">person</span>
+                            <span class="ow-account-settings-profile-data-header-label">Name</span>
+                        </div>
+                        
+                        <div class="ow-account-settings-profile-data-info">
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Lastname</span>
+                                <span id="ow-asp-lastname" class="ow-account-settings-profile-data-info-label">Lastname</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Firstname</span>
+                                <span id="ow-asp-firstname" class="ow-account-settings-profile-data-info-label">Firstname</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Middlename</span>
+                                <span id="ow-asp-middlename" class="ow-account-settings-profile-data-info-label">Middlename</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Extension</span>
+                                <span id="ow-asp-extension" class="ow-account-settings-profile-data-info-label">Extension</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ow-account-settings-profile-data">
+                        <div class="ow-account-settings-profile-data-header">
+                            <span class="material-icons-outlined ow-account-settings-profile-data-header-icon">person_pin</span>
+                            <span class="ow-account-settings-profile-data-header-label">Bio</span>
+                        </div>
+                        
+                        <div class="ow-account-settings-profile-data-info">
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Birthday</span>
+                                <span id="ow-asp-birthday" class="ow-account-settings-profile-data-info-label">Birthday</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Age</span>
+                                <span id="ow-asp-age" class="ow-account-settings-profile-data-info-label">Age</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Gender</span>
+                                <span id="ow-asp-gender" class="ow-account-settings-profile-data-info-label">Gender</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Civil Status</span>
+                                <span id="ow-asp-civilstatus" class="ow-account-settings-profile-data-info-label">Civil Status</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ow-account-settings-profile-data">
+                        <div class="ow-account-settings-profile-data-header">
+                            <span class="material-icons-outlined ow-account-settings-profile-data-header-icon">contacts</span>
+                            <span class="ow-account-settings-profile-data-header-label">Contact Information</span>
+                        </div>
+                        
+                        <div class="ow-account-settings-profile-data-info">
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Email Address</span>
+                                <span id="ow-asp-email" class="ow-account-settings-profile-data-info-label">Email Address</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Phone Number</span>
+                                <span id="ow-asp-contactnumber" class="ow-account-settings-profile-data-info-label">Phone Number</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Address</span>
+                                <span id="ow-asp-address" class="ow-account-settings-profile-data-info-label">Address</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ow-account-settings-profile-data">
+                        <div class="ow-account-settings-profile-data-header">
+                            <span class="material-icons-outlined ow-account-settings-profile-data-header-icon">work</span>
+                            <span class="ow-account-settings-profile-data-header-label">Job Information</span>
+                        </div>
+                        
+                        <div class="ow-account-settings-profile-data-info">
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Date joined</span>
+                                <span id="ow-asp-datejoined" class="ow-account-settings-profile-data-info-label">Date joined</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Designation</span>
+                                <span id="ow-asp-designation" class="ow-account-settings-profile-data-info-label">Designation</span>
+                            </div>
+                            
+                            <div class="ow-account-settings-profile-data-info-box">
+                                <span class="ow-account-settings-profile-data-info-header">Department</span>
+                                <span id="ow-asp-department" class="ow-account-settings-profile-data-info-label">Department</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="ow-account-settings-content-action">
+                        <div id="ow-account-settings-content-action-btn">
+                            <span id="ow-account-settings-content-action-icon" class="material-icons-outlined">edit</span>
+                            <span id="ow-account-settings-content-action-label">Edit Info</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="ow-snackbar">
+            <span id="ow-snackbar-label">This is a label of snackbar.</span>
+            <button id="ow-snackbar-close" class="material-icons-outlined">close</button>
+        </div>
+        <div id="ow-dashboard">
+            <div id="ow-menu-backdrop">
+                <div id="ow-menu">
+                    <div id="ow-profile">
+                        <div id="ow-avatar-box">
+                            <span id="ow-avatar" class="material-icons-outlined">person</span>
+                        </div>
+
+                        <div id="ow-user-id">
+                            <span id="ow-username">Username</span>
+                            <span id="ow-role">Role</span>
+                        </div>
+                    </div>
+
+                    <div id="ow-menu-item">
+                        <div id="ow-mb1" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi1" class="material-icons-round ow-menu-icon ow-black">dashboard</span>
+                                <span id="ow-mv1" class="ow-menu-btn-value ow-black">Dashboard</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb2" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi2" class="material-icons-outlined ow-menu-icon">person_add</span>
+                                <span id="ow-mv2" class="ow-menu-btn-value">Add employee</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb3" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi3" class="material-icons-outlined ow-menu-icon">business</span>
+                                <span id="ow-mv3" class="ow-menu-btn-value">Organization</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb4" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi4" class="material-icons-outlined ow-menu-icon">today</span>
+                                <span id="ow-mv4" class="ow-menu-btn-value">Attendance</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb5" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi5" class="material-icons-outlined ow-menu-icon">hail</span>
+                                <span id="ow-mv5" class="ow-menu-btn-value">Leave</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb6" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi6" class="material-icons-outlined ow-menu-icon">account_circle</span>
+                                <span id="ow-mv6" class="ow-menu-btn-value">Accounts</span>
+                            </div>
+                        </div>
+                        
+                        <div id="ow-mb7" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi7" class="material-icons-outlined ow-menu-icon">payments</span>
+                                <span id="ow-mv7" class="ow-menu-btn-value">Payrolls</span>
+                            </div>
+                        </div>
+
+                        <div id="ow-mb8" class="ow-menu-btn">
+                            <div class="ow-menu-label">
+                                <span id="ow-mi8"
+                                    class="material-icons-outlined ow-menu-icon">chat_bubble_outline</span>
+                                <span id="ow-mv8" class="ow-menu-btn-value">SMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ow-menu-action">
+                        <div class="ow-menu-action-btn">
+                            <div id="ow-logout" class="ow-menu-action-label">
+                                <span class="material-icons-outlined ow-action-icon">logout</span>
+                                <span class="ow-action-value">Logout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ow-menu-modular">
+
+                </div>
+            </div>
+
+            <div id="ow-sandbox">
+                <div id="ow-menu-bar">
+                    <div id="ow-icon-1">
+                        <span id="ow-menu-icon" class="material-icons-round ow-menu-bar-icon">menu</span>
+                    </div>
+
+                    <div id="ow-menu-bar-logo">
+                        <span id="ow-menu-bar-logo-label">Ocean Wave</span>
+                    </div>
+
+                    <div id="ow-icon-2">
+                        <span id="ow-account-icon" class="material-icons-round ow-menu-bar-icon">account_circle</span>
+                    </div>
+                    
+                </div>
+
+                <div id="ow-page-box">
+                    <section id="ow-p1" class="ow-page">
+                        <div id="ow-dashboard-box">
+                            <div class="ow-dashboard-sheet">
+                                <div class="ow-dashboard-counter">
+                                    <span class="ow-dashboard-counter-value">0</span>
+                                </div>
+                                <div class="ow-dashboard-header">
+                                    <span class="ow-dashboard-header-label">New employees</span>
+                                </div>
+                            </div>
+
+                            <div class="ow-dashboard-sheet">
+                                <div class="ow-dashboard-counter">
+                                    <span class="ow-dashboard-counter-value">0</span>
+                                </div>
+                                <div class="ow-dashboard-header">
+                                    <span class="ow-dashboard-header-label">Employees</span>
+                                </div>
+                            </div>
+
+                            <div class="ow-dashboard-sheet">
+                                <div class="ow-dashboard-counter">
+                                    <span class="ow-dashboard-counter-value">0</span>
+                                </div>
+                                <div class="ow-dashboard-header">
+                                    <span class="ow-dashboard-header-label">Leave</span>
+                                </div>
+                            </div>
+
+                            <div class="ow-dashboard-sheet">
+                                <div class="ow-dashboard-counter">
+                                    <span class="ow-dashboard-counter-value">0</span>
+                                </div>
+                                <div class="ow-dashboard-header">
+                                    <span class="ow-dashboard-header-label">Salaries paid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="ow-p2" class="ow-page">
+                        <div id="ow-employee-box">
+                            <div id="ow-employee-form">
+                                <div class="ow-form-row">
+                                    <div class="ow-form-header">
+                                        <span class="material-icons-outlined ow-form-icon">face</span>
+                                        <span class="ow-form-header-label">Name</span>
+                                    </div>
+
+                                    <div class="ow-form-input">
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="lastname" class="ow-form-text" name="lastname" placeholder="Last name" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="firstname" class="ow-form-text" name="firstname" placeholder="First name" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="middlename" class="ow-form-text" name="middlename" placeholder="Middle name" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-dropdown">
+                                            <div class="ow-dropdown-btn">
+                                                <select id="extension">
+                                                    <option value="N/A">Select Extension</option>
+                                                    <option value="Jr.">Jr.</option>
+                                                    <option value="Sr.">Sr.</option>
+                                                    <option value="I.">I.</option>
+                                                    <option value="II.">II.</option>
+                                                    <option value="III.">III.</option>
+                                                    <option value="IV.">IV.</option>
+                                                    <option value="V.">V.</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ow-form-row">
+                                    <div class="ow-form-header">
+                                        <span class="material-icons-outlined ow-form-icon">person_pin</span>
+                                        <span class="ow-form-header-label">Bio</span>
+                                    </div>
+
+                                    <div class="ow-form-input">
+                                        <div class="ow-form-textbox">
+                                            <input type="date" id="birthday" class="ow-form-text" name="birthday" required>
+                                            <button class="material-icons-outlined ow-clear-btn"></button>
+                                        </div>
+
+                                        <div class="ow-form-textbox">
+                                            <input type="number" id="age" class="ow-form-text" name="age" placeholder="Age" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-dropdown">
+                                            <div class="ow-dropdown-btn">
+                                                <select id="gender">
+                                                    <option value="N/A">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="ow-form-dropdown">
+                                            <div class="ow-dropdown-btn">
+                                                <select id="civilstatus">
+                                                    <option value="N/A">Select Civil Status</option>
+                                                    <option value="Single">Single</option>
+                                                    <option value="Married">Married</option>
+                                                    <option value="Divorced">Divorced</option>
+                                                    <option value="Widowed">Widowed</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ow-form-row">
+                                    <div class="ow-form-header">
+                                        <span class="material-icons-outlined ow-form-icon">person</span>
+                                        <span class="ow-form-header-label">Contact information</span>
+                                    </div>
+
+                                    <div class="ow-form-input">
+                                        <div class="ow-form-textbox">
+                                            <input type="email" id="email" class="ow-form-text" name="email" placeholder="Email address" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-textbox">
+                                            <input type="number" id="contactnumber" class="ow-form-text" name="contactnumber" placeholder="Phone number"required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+                                        
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="address" class="ow-form-text" name="address" placeholder="Address" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ow-form-row">
+                                    <div class="ow-form-header">
+                                        <span class="material-icons-outlined ow-form-icon">work_outline</span>
+                                        <span class="ow-form-header-label">Job information</span>
+                                    </div>
+
+                                    <div class="ow-form-input">
+                                        <div class="ow-form-textbox">
+                                            <input type="date" id="datejoined" class="ow-form-text" name="datejoined" placeholder="Date joined" required>  
+                                            <button class="material-icons-outlined ow-clear-btn">today</button> 
+                                        </div>
+
+                                        <div class="ow-form-dropdown">
+                                            <div class="ow-dropdown-btn">
+                                                <select id="designation" class="ow-organization-selection">
+                                                    <option value="N/A">Select Designation</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="ow-dropdown-btn">
+                                                <select id="department" class="ow-organization-selection">
+                                                    <option value="N/A">Select Department</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ow-form-row">
+                                    <div class="ow-form-header">
+                                        <span class="material-icons-outlined ow-form-icon">account_circle</span>
+                                        <span class="ow-form-header-label">Account registration</span>
+                                    </div>
+
+                                    <div class="ow-form-input">
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="username" class="ow-form-text" name="username" placeholder="Username" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-textbox">
+                                            <input type="text" id="password" class="ow-form-text" name="password" placeholder="Password" required>
+                                            <button class="material-icons-outlined ow-clear-btn">clear</button>
+                                        </div>
+
+                                        <div class="ow-form-dropdown">
+                                            <div class="ow-dropdown-btn">
+                                                <select id="role">
+                                                    <option value="N/A">Select Role</option>
+                                                    <option value="auditor">Auditor</option>
+                                                    <option value="admin">Admin</option>
+                                                    <option value="employee">Employee</option>
+                                                    <option value="manager">HR Manager</option>
+                                                    <option value="officer">HR Officer</option>
+                                                    <option value="supervisor">Supervisor</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="ow-employee-action">
+                                <button type="submit" id="ow-action-btn">Confirm</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="ow-p3" class="ow-page">
+                        <div id="ow-organization-box">
+                            <div id="ow-organization-tab">
+                                <div class="ow-tab-btn-box">
+                                   <div id="ow-tb1" class="ow-tab-btn">
+                                       <span id="ow-tbi1" class="material-icons-outlined ow-tab-btn-icon">business_center</span>
+                                       <span id="ow-tbl1" class="ow-tab-btn-label">Designation</span>
+                                   </div>
+                                </div>
+                                       
+                                <div class="ow-tab-btn-box">
+                                    <div id="ow-tb2" class="ow-tab-btn">
+                                        <span id="ow-tbi2" class="material-icons-outlined ow-tab-btn-icon">meeting_room</span>
+                                        <span id="ow-tbl2" class="ow-tab-btn-label">Department</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div id="ow-organization-page">
+                                <div id="ow-pg1" class="ow-organization-page">
+                                    <div id="ow-pg1-header" class="ow-pg-header">
+                                        <div class="ow-add-input-bar">
+                                            <input type="text" id="ow-add-designation" class="ow-add-input-text" placeholder="Add designation">
+                                            <button class="material-icons-outlined ow-add-btn">add</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="ow-pg1-content" class="ow-pg-content">
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div id="ow-pg2" class="ow-organization-page">
+                                    <div id="ow-pg2-header" class="ow-pg-header">
+                                        <div class="ow-add-input-bar">
+                                            <input type="text" id="ow-add-department" class="ow-add-input-text" placeholder="Add department">
+                                            <button class="material-icons-outlined ow-add-btn">add</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="ow-pg2-content" class="ow-pg-content">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="ow-p4" class="ow-page">
+                        <div id="ow-attendance-tab">
+                            <div id="ow-atb1" class="ow-attendance-tab-btn">
+                                <span id="ow-ati1" class="material-icons-outlined ow-attendance-icon">today</span>
+                                <span id="ow-atl1" class="ow-attendance-tab-label">Attendance Sheet</span>
+                            </div>
+                            
+                            <div id="ow-atb2" class="ow-attendance-tab-btn">
+                                <span id="ow-ati2" class="material-icons-outlined ow-attendance-icon">schedule</span>
+                                <span id="ow-atl2" class="ow-attendance-tab-label">Attendance Log</span>
+                            </div>
+                        </div>
+                        
+                        <div id="ow-attendance-content">
+                            <div id="ow-alp1" class="ow-attendance-page">
+                                <label for="employeename">Employee name</label>
+                                <input type="text" id="employeename" name="employeename" class="ow-attendance-input" placeholder="e.g Juan dela Cruz">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" class="ow-attendance-input">
+                                <label for="timein">Time in</label>
+                                <input type="time" id="timein" name="timein" class="ow-attendance-input">
+                                <label for="timeout">Time out</label>
+                                <input type="time" id="timeout" name="timeout" class="ow-attendance-input">
+                                <button id="ow-attendance-action-btn">Submit</button>
+                            </div>
+                            
+                            <div id="ow-alp2" class="ow-attendance-page">
+                                
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="ow-p5" class="ow-page">
+                        <div id="ow-leave-tab">
+                            <div id="ow-lb1" class="ow-leave-tab-btn">
+                                <span id="ow-li1" class="material-icons-outlined ow-leave-tab-icon">logout</span>
+                                <span id="ow-ll1" class="ow-leave-tab-label">Leave Types</span>
+                            </div>
+                            
+                            <div id="ow-lb2" class="ow-leave-tab-btn">
+                                <span id="ow-li2" class="material-icons-outlined ow-leave-tab-icon">send</span>
+                                <span id="ow-ll2" class="ow-leave-tab-label">Leave Requests</span>
+                            </div>
+                            
+                            <div id="ow-lb3" class="ow-leave-tab-btn">
+                                <span id="ow-li3" class="material-icons-outlined ow-leave-tab-icon">cake</span>
+                                <span id="ow-ll3" class="ow-leave-tab-label">Holidays</span>
+                            </div>
+                            
+                            <div id="ow-lb4" class="ow-leave-tab-btn">
+                                <span id="ow-li4" class="material-icons-outlined ow-leave-tab-icon">schedule</span>
+                                <span id="ow-ll4" class="ow-leave-tab-label">Leave History</span>
+                            </div>
+                        </div>
+                        <div id="ow-leave-content">
+                            <div id="ow-lp1" class="ow-leave-page">
+                                <div class="ow-lp-tab">
+                                    <div class="ow-lp-add-form">
+                                        <input type="text" id="ow-add-text" class="ow-add-text" placeholder="Add leave type">
+                                        <button id="ow-add-leave-btn" class="material-icons-round ow-add-leave-btn">add</button>
+                                    </div>
+                                </div>
+                                
+                                <div id="ow-leave-add-page" class="ow-leave-content">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div id="ow-lp2" class="ow-leave-page">
+                                <h1>Page 2</h1>
+                            </div>
+                            
+                            <div id="ow-lp3" class="ow-leave-page">
+                                <h1>Page 3</h1>
+                            </div>
+                            
+                            <div id="ow-lp4" class="ow-leave-page">
+                                <h1>Page 4</h1>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="ow-p6" class="ow-page">
+                        <div id="ow-account-box">
+                            <div id="ow-account-header">
+                                <div id="ow-account-header-box">
+                                    <div id="ow-account-header-id">
+                                        <span class="ow-account-header-label">ID</span>
+                                    </div>
+                                    <div id="ow-account-header-profile">
+                                        <span class="ow-account-header-label">Name</span>
+                                        <span class="ow-account-header-label">Phone no.</span>
+                                        <span class="ow-account-header-label">Email</span>
+                                        <span class="ow-account-header-label">Role</span>
+                                    </div>
+                                    <div id="ow-account-header-action">
+                                        <span class="ow-account-header-label">Actions</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="ow-account-table">
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="ow-p7" class="ow-page">
+                        <div id="ow-payroll-tab">
+                            <div id="ow-ptb1" class="ow-payroll-tab-btn">
+                                <span id="ow-pti1" class="material-icons-outlined ow-payroll-tab-icon">wallet</span>
+                                <span id="ow-ptl1" class="ow-payroll-tab-label">Payrolls</span>
+                            </div>
+                            
+                            <div id="ow-ptb2" class="ow-payroll-tab-btn">
+                                <span id="ow-pti2" class="material-icons-outlined ow-payroll-tab-icon">schedule</span>
+                                <span id="ow-ptl2" class="ow-payroll-tab-label">Payroll History</span>
+                            </div>
+                        </div>
+                        
+                        <div id="ow-payroll-content">
+                            <div id="ow-pp1" class="ow-payroll-page">
+                                <div id="ow-payroll-page-section">
+                                    <div class="ow-payroll-page-section">
+                                        <label for="employee-id">Employee Id</label>
+                                        <input type="text" id="employee-id" class="ow-payroll-input" name="employee-id" placeholder="Enter employee ID">
+                                        <label for="salary-per-hour">Amount of salary/hr</label>
+                                        <input type="number" id="salary-per-hour" class="ow-payroll-input" name="salary-per-hour" placeholder="Enter salary amount">
+                                        <label for="number-of-workhours">No. of workhours</label>
+                                        <input type="number" id="number-of-workhours" class="ow-payroll-input" name="number-of-workhours" placeholder="Enter no. of hours">
+                                        <button id="ow-payroll-action-btn">Calculate</button>
+                                    </div>
+                                
+                                    <div class="ow-payroll-page-section">
+                                        <span id="ow-payroll-daily" class="ow-payroll-label">Daily salary: 0</span>
+                                        <span id="ow-payroll-weekly" class="ow-payroll-label">Weekly salary: 0</span>
+                                        <span id="ow-payroll-monthly" class="ow-payroll-label">Monthly salary: 0</span>
+                                        <span id="ow-payroll-quarterly" class="ow-payroll-label">Quarterly salary: 0</span>
+                                        <span id="ow-payroll-annual" class="ow-payroll-label">Annual salary: 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="ow-pp2" class="ow-payroll-page">
+                                <h1>Page 2</h1>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="ow-p8" class="ow-page">
+                        <div id="ow-sms-content">
+                            <div id="ow-sms-no-content">
+                                <span id="ow-sms-no-content-icon" class="material-icons-outlined">message</span>
+                                <span id="ow-sms-no-content-label">No messages yet.</span>
+                            </div>
+                            <div id="ow-sms-add-btn">
+                                <span id="ow-sms-add-icon" class="material-icons-outlined">message</span>
+                                <span id="ow-sms-add-label">Start messaging</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="core/system/screen.js" type="text/javascript" defer="true"></script>
+    <script src="js/app/app.js" type="text/javascript" defer="true"></script>
+    <script src="js/app/font.js" type="text/javascript" defer="true"></script>
+    <script src="js/dashboard/account/account.js" type="module" defer="true"></script>
+    <script src="js/dashboard/attendance/attendance.js" type="module" defer="true"></script>
+    <script src="js/dashboard/employee/employee.js" type="module" defer="true"></script>
+    <script src="js/dashboard/dashboard.js" type="module" defer="true"></script>
+    <script src="js/dashboard/leave/leave.js" type="module" defer="true"></script>
+    <script src="js/dashboard/organization/organization.js" type="module" defer="true"></script>
+    <script src="js/dashboard/payroll/payroll.js" type="module" defer="true"></script>
+    <script src="js/ui/snackbar/snackbar.js" type="module" defer="true"></script>
+</body>
+</html>
