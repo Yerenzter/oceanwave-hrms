@@ -1,0 +1,19 @@
+{
+  "type": [
+    {
+      "name": "Christmas",
+      "id": 1
+    },
+    {
+      "name": "Maternal",
+      "id": 2
+    },
+    {
+      "name": "Paternal",
+      "id": 3
+    }
+  ],
+  "holiday": [],
+  "request": [],
+  "log": []
+}

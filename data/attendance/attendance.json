@@ -1,0 +1,12 @@
+{
+  "attendance": [
+    {
+      "log": "[2023-08-04, 23:07] Yerenzter has signed the attendance from 11:07 to 23:07 respectively.",
+      "id": 1
+    },
+    {
+      "log": "[2023-08-04, 12:00] Yerenzter has signed the attendance from 08:00 to 12:00 respectively.",
+      "id": 2
+    }
+  ]
+}

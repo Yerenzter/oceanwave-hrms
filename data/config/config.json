@@ -1,0 +1,9 @@
+{
+  "config": [
+    {
+      "id": 1,
+      "isNewUser": false,
+      "isAlreadyLoggedIn": false
+    }
+  ]
+}

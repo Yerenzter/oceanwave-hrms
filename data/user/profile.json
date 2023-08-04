@@ -1,0 +1,23 @@
+{
+  "profile": [
+    {
+      "id": 0,
+      "username": "yrry",
+      "role": "admin",
+      "lastname": "Umiten",
+      "firstname": "Marc Joseff",
+      "middlename": "Flores",
+      "extension": "N/A",
+      "birthday": "2003-01-01",
+      "age": "20",
+      "gender": "Male",
+      "civilstatus": "Single",
+      "email": "yerenzter@yandex.com",
+      "contactnumber": "09355600126",
+      "address": "Magcalon, San Jose, Antique",
+      "datejoined": "N/A",
+      "designation": "2023-08-04",
+      "department": "Programmer"
+    }
+  ]
+}

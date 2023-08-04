@@ -1,0 +1,42 @@
+{
+  "designation": [
+    {
+      "name": "Programmer",
+      "id": 1
+    },
+    {
+      "name": "Cameraman",
+      "id": 2
+    },
+    {
+      "name": "Videographer",
+      "id": 3
+    },
+    {
+      "name": "Web Developer",
+      "id": 4
+    },
+    {
+      "name": "Animator",
+      "id": 5
+    },
+    {
+      "name": "Scriptwriter",
+      "id": 6
+    },
+    {
+      "name": "Director",
+      "id": 7
+    },
+    {
+      "name": "Musician",
+      "id": 8
+    }
+  ],
+  "department": [
+    {
+      "name": "I.T. Department",
+      "id": 1
+    }
+  ]
+}
