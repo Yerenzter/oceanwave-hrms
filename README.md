@@ -1,97 +1,128 @@
-# OceanWave Theme HRMS
-Free and open-source human resource management system with interactive and minimalistic GUI.
+# Ocean Wave HRMS
+Is free and open-source HR management system developed by Yerenzter.
 
-## You can use this copy for:
+You can use our system for:
+
 - Personal
+- Home
 - School
-- Commercial
-- Enterprise
-- Goverments
+- Office
+- Business/Enterprise
+- Governments
+
+## System information
+------
+- **Name:** Ocean Wave HR system
+- **Developer:** Yerenzter (of Qubonic Arts & Software, AYCQ.)
+- **Price:** Unspecified
+- **Model:** Open-source
+- **Platform:** Web & Cross Platform
+- **Description:** A free and open-source HR management system.
+- **Developer Address:** Magcalon, San Jose, Antique 5700, PH
+- **License:** AYCQ.
+
 
 ## Implementations
+------
+- HTML5
+- CSS3
+- JavaScript
+- Material Icons- JSON (as database)
 - NodeJS
 - ExpressJS
 - JSON-Server
-- LowDB
-- SliderJS (*)
-- chartJS
-- AJAX
-- Material Icons
+- lowDB
 
-## Usage
-
+## Instructions
 ------
+To use our system you need to follow these commands carefully in order to work and run the system successfully.
 
-## For Linux
-**Tools:** Any Linux terminal in to your desktop 
+### Step 1: Clone the Ocean Wave repository
+`
+git clone http://github.com/Yerenzter/oceanwave-hrms
+`
 
-**Commands**:
 
-**Update, Install NodeJS & Git package**
+### Step 2: Navigate the repository using a terminal
+Locate the cloned repository which the repository that you cloned.
+For example:
 
-**Debian/Ubuntu and derivatives**
-```
-sudo apt install git nodejs
-```
+**Linux - if the cloned repository stored in home/user**
 
-**Arch and derivatives**
-```
-sudo pacman -S git nodejs
-```
+`
+cd /home/user/oceanwave-hrms
+`
 
-**Fedora and derivatives**
-```
-sudo dnf install git nodejs
-```
+**Windows - if the cloned repository stored in C:/**
 
-**Alpine**
-```
-sudo apk install git nodejs
-```
-------
+`
+cd c:/oceanwave-hrms
+`
 
-### For Windows
-**Tools:** Command Prompt or PowerShell
+**Android - if Termux was stored in /data/com.termux**
 
-**Commands**
-**Install Git**
-```
-winget install Git.Git
-```
-
-------
-
-### For Android
-**Tools:** Termux
-
-**Commands**
-**Install Git & NodeJS**
-```
-pkg install git nodejs
-```
-
-------
-
-**After you install all the packages clone OceanWave repository from GitHub**
-**Clone the repository**
-``` 
-sudo git clone https://github.com/Yerenzter/oceanwave-hrms
-```
-**Locate the oceanwave-hrms directory**
-```
+`
 cd oceanwave-hrms
-```
-**Initialize NodeJS project & install ExpressJS, JSON-Server & LowDB**
-```
-npm init -y && npm install -g express json-server lowdb
-```
+`
 
-**Run server.js file using this command**
-```
+
+### Step 3: Install NodeJS (Skip to Step if you have NodeJS installed)
+If your machine does not have NodeJS and their modules installed yet just follow these command of the following:
+
+**Linux**
+
+Debian/Ubuntu & their derivatives.
+	 
+`
+sudo apt nodejs
+`
+
+Arch & their derivatives
+
+`
+sudo pacman -S nodejs
+`
+
+Alpine Linux
+
+`
+sudo apk install nodejs
+`
+
+**Windows**
+
+`
+winget install Node
+`
+
+**Android**
+
+`
+pkg install nodejs
+`
+
+
+### Step 4: Install NodeJS modules (If modules already installed skip to Step 5)
+If your machine does not have any modules installed follow the commands of the following:
+
+`
+npm install -g express json-server lowdb twilio
+`
+
+
+### Step 5: Run server.js with Node
+
+`
 node server.js
-```
+`
 
-**Go to browser and type this address in URL bar**
-```
-https://localhost:1024
-```
+
+### Step 6: Go to any browser and enter the system address
+Copy this address
+
+`
+http://localhost:1024
+`
+
+
+****Enjoy :)****
