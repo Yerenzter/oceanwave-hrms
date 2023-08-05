@@ -41,3 +41,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+      - name: Installing NodeJS modules
+        run: npm install -g express json-server lowdb twilio
+      - name: Running Ocean Wave HRMS
+        run: node server.js
