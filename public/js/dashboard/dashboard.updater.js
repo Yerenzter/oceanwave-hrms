@@ -26,7 +26,7 @@ import * as ow_sb_method from "../ui/snackbar/snackbar.method.js";
 		ow_var.aspFirstname.textContent = profile.firstname;
 		ow_var.aspMiddlename.textContent = profile.middlename;
 		ow_var.aspBirthday.textContent = profile.birthday;
-		ow_var.aspExtension.textContent = profle.extension;
+		ow_var.aspExtension.textContent = profile.extension;
 		ow_var.aspAge.textContent = profile.age;
 		ow_var.aspGender.textContent = profile.gender;
 		ow_var.aspCivilStatus.textContent = profile.civilstatus;
@@ -38,7 +38,7 @@ import * as ow_sb_method from "../ui/snackbar/snackbar.method.js";
 		ow_var.aspDepartment.textContent = profile.department;
 	})
 	.catch(error => {
-		ow_sb_method.Show(error);
+		console.log(error);
 	})
 );
 

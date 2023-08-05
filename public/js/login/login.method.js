@@ -52,6 +52,7 @@ userCivilStatus,
 userEmail,
 userContactNumber,
 userAddress,
+userDateJoined,
 userDesignation,
 userDepartment) {
     fetch("http://localhost:10002/profile/0", {
@@ -74,6 +75,7 @@ userDepartment) {
             email: userEmail,
             contactnumber: userContactNumber,
             address: userAddress,
+            datejoined: userDateJoined,
             designation: userDesignation,
             department: userDepartment
         })
