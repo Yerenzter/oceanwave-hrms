@@ -29,17 +29,6 @@ for (let r = 0; r < ports.length; r++) {
     console.log(`http://localhost:${ports[r]}                   ${response.status}`);
 }
 
-exec("start msedge http://localhost:1024", (err, stdout, stderr) => {
-    if(err) {
-        exec("start chrome http://localhost:1024", (err, stdout, stderr) => {
-            if(err) console.log(`
-System is failed to run due to absence of Edge or Chrome broswer.
-So open your favorite browser and enter this server address at "http://localhost:1024".
-`);
-        });
-    }
-});
-
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
